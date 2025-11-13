@@ -1,0 +1,1037 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap.xml"><meta name="description" content="作者原创的技术思考与实践分享，记录开发路上的点滴感悟"><title>
+      叩钉壹刻 - 文章
+    </title><link rel="stylesheet" href="/coding-one-more-time/_astro/index.ICWMGL1L.css">
+<style>@keyframes glow{0%{background-position:0% 0%}25%{background-position:100% 0%}50%{background-position:100% 100%}75%{background-position:0% 100%}to{background-position:0% 0%}}.motion-safe\:animate-glow[data-astro-cid-fjlmw5md]{animation:glow var(--duration) ease-in-out infinite}
+</style></head> <body> <!-- 字体初始化 --> <script type="module" src="/coding-one-more-time/_astro/Main.astro_astro_type_script_index_0_lang.BY1HELZm.js"></script> <!-- 主容器 --> <main class="bg-background text-foreground transition-colors duration-300 flex flex-col justify-between h-screen w-full"> <!-- 头部导航 --> <!-- 头部导航 --><header class="flex justify-between items-center h-14 container mx-auto header layout"> <!-- 左侧区域 --> <div class="header-left flex gap-x-3 items-center"> <!-- Logo --> <a href="https://yumih1129.github.io/coding-one-more-time" title="叩钉壹刻" class="inline-flex items-center transition-colors duration-200"> <img src="/coding-one-more-time/logo.png" alt="叩钉壹刻" loading="eager" decoding="async" inferSize="true" draggable="false" fetchpriority="auto" width="104" height="48" class="w-26 h-12 object-cover pointer-events-none select-none"> </a> <!-- 导航菜单 --> <nav class="hidden lg:flex items-center" aria-label="Menu"><ul class="flex gap-x-1.5 items-center"><li class="relative group" data-menu-item><a href="/coding-one-more-time/" title="首页" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>  </svg><span class="truncate" title="首页">首页</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/posts" title="文章" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 bg-gray-100 dark:bg-secondary text-gray-900 dark:text-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notepad-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M8 2v4"></path><path d="M12 2v4"></path><path d="M16 2v4"></path><rect width="16" height="18" x="4" y="4" rx="2"></rect><path d="M8 10h6"></path><path d="M8 14h8"></path><path d="M8 18h5"></path>  </svg><span class="truncate" title="文章">文章</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/docs" title="小册" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><path d="M8 11h8"></path><path d="M8 7h6"></path>  </svg><span class="truncate" title="小册">小册</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/notes" title="随笔" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M9.5 8h5"></path><path d="M9.5 12H16"></path><path d="M9.5 16H14"></path>  </svg><span class="truncate" title="随笔">随笔</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/gallery" title="图集" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-image flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="10" cy="8" r="2"></circle>  </svg><span class="truncate" title="图集">图集</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/links" title="友链" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg><span class="truncate" title="友链">友链</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/about" title="关于" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info flex-shrink-0 text-gray-500 dark:text-gray-400"> <circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path>  </svg><span class="truncate" title="关于">关于</span></a></li></ul></nav><script>
+  // 垂直菜单子菜单切换函数
+  function toggleVerticalSubmenu(event, button) {
+    // 阻止事件冒泡
+    if (event?.stopPropagation) event.stopPropagation();
+    if (!button) return;
+
+    // 找到子菜单元素和图标
+    const menuItem = button.closest("[data-menu-item]");
+    const submenu = menuItem?.querySelector("[data-submenu]");
+    if (!menuItem || !submenu) return;
+
+    // 确定图标位置并检查当前状态
+    const isButtonFullWidth = button.classList.contains("flex-1");
+    const icon = isButtonFullWidth
+      ? button.querySelector("svg:last-child")
+      : button.querySelector("svg");
+    const isOpen = submenu.classList.contains("max-h-0");
+
+    // 执行展开或收起动画
+    if (isOpen) {
+      // 展开动画
+      submenu.setAttribute("data-open", "true");
+
+      // 延迟设置max-h和opacity以确保动画正确触发
+      setTimeout(() => {
+        submenu.classList.add("mt-1");
+
+        // 延迟添加mt-1类使间距变化更自然
+        setTimeout(() => {
+          submenu.classList.remove("max-h-0", "opacity-0");
+          submenu.classList.add("max-h-96", "opacity-100");
+        }, 50);
+      }, 10);
+
+      // 旋转图标
+      if (icon) icon.style.transform = "rotate(180deg)";
+    } else {
+      // 收起动画 - 先移除mt-1类
+      submenu.classList.remove("mt-1");
+
+      // 延迟执行其他收起动画，使间距变化更自然
+      setTimeout(() => {
+        submenu.classList.remove("max-h-96", "opacity-100");
+        submenu.classList.add("max-h-0", "opacity-0");
+
+        // 延迟设置data-open属性
+        setTimeout(() => submenu.setAttribute("data-open", "false"), 150);
+      }, 50);
+
+      // 恢复图标位置
+      if (icon) icon.style.transform = "rotate(0deg)";
+    }
+  }
+
+  // 添加到window对象使全局可访问
+  window.toggleVerticalSubmenu = toggleVerticalSubmenu;
+</script> </div> <!-- 右侧区域 --> <div class="header-right flex gap-x-1 items-center"> <!-- 搜索按钮 --> <button onclick="openSearchModal()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 cursor-pointer">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"> <path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle>  </svg>  </button> <!-- 布局切换按钮 --> <button onclick="toggleLayoutWidth()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 cursor-pointer !hidden lg:!block">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gallery-horizontal"> <path d="M2 3v18"></path><rect width="12" height="18" x="6" y="3" rx="2"></rect><path d="M22 3v18"></path>  </svg>  </button> <!-- 主题切换按钮 --> <button onclick="toggleTheme()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 cursor-pointer">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun dark:hidden"> <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon hidden dark:block"> <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>  </svg>  </button> <!-- 移动端菜单按钮 --> <button id="menuToggle" onclick="openRightMenuDrawer()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-8 rounded-md px-2 cursor-pointer lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"> <path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path>  </svg>  </button> </div> <!-- 搜索模态框 --> <div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center pt-[17vh] transition-opacity duration-300" data-open="false"> <div class="relative w-[90%] md:w-[75%] max-w-[850px] mx-auto bg-white dark:bg-slate-950 rounded-lg shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-200 scale-95 opacity-0 max-h-[65vh] md:max-h-[70vh] max-h-[750px]" data-modal-content> <div id="modal-search" class="pagefind-ui-modal pagefind-init" data-pagefind-ui data-bundle-path="/coding-one-more-time/pagefind/" data-ui-options="{&#34;showImages&#34;:false}"></div> <script type="module" src="/coding-one-more-time/_astro/Search.astro_astro_type_script_index_0_lang.XJI6UTiE.js"></script> </div> </div> <script>
+  // 搜索模态框控制
+  window.searchModalController = {
+    open: function () {
+      const modal = document.getElementById("search-modal");
+      if (modal) {
+        modal.setAttribute("data-open", "true");
+
+        // 聚焦到搜索输入框
+        setTimeout(() => {
+          const searchInput = modal.querySelector('input[type="search"]');
+          if (searchInput) {
+            searchInput.focus();
+          }
+        }, 150);
+      }
+    },
+    isOpen: function () {
+      const modal = document.getElementById("search-modal");
+      return modal && modal.getAttribute("data-open") === "true";
+    },
+    close: function () {
+      const modal = document.getElementById("search-modal");
+      if (modal) {
+        modal.setAttribute("data-open", "false");
+
+        // 可选：在动画完成后重置焦点
+        setTimeout(() => {
+          const searchButton = document.querySelector(
+            '[onclick="openSearchModal()"]'
+          );
+          if (searchButton) {
+            searchButton.focus();
+          }
+        }, 200);
+      }
+    },
+  };
+
+  // 关闭搜索模态框
+  window.closeSearchModal = function () {
+    window.searchModalController.close();
+  };
+
+  // ESC键关闭模态框
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      const modal = document.getElementById("search-modal");
+      if (modal && modal.getAttribute("data-open") === "true") {
+        window.searchModalController.close();
+      }
+    }
+  });
+
+  // 点击背景关闭模态框
+  document.addEventListener("click", function (event) {
+    const modal = document.getElementById("search-modal");
+    if (
+      modal &&
+      event.target === modal &&
+      modal.getAttribute("data-open") === "true"
+    ) {
+      window.searchModalController.close();
+    }
+  });
+
+  // 动态检测搜索结果抽屉是否需要滚动条
+  function updateDrawerScrollbar() {
+    const drawer = document.querySelector(
+      ".pagefind-ui-modal .pagefind-ui__drawer"
+    );
+    if (drawer) {
+      const needsScrollbar = drawer.scrollHeight > drawer.clientHeight;
+      if (needsScrollbar) {
+        drawer.classList.add("has-scrollbar");
+      } else {
+        drawer.classList.remove("has-scrollbar");
+      }
+    }
+  }
+
+  // 处理mark标签中的空格
+  function processMarkTags() {
+    const marks = document.querySelectorAll(
+      ".pagefind-ui-modal .pagefind-ui__result-excerpt mark"
+    );
+    marks.forEach((mark) => {
+      // 获取原始文本并去除前后空格
+      const originalText = mark.textContent || "";
+      const trimmedText = originalText.trim();
+
+      // 如果文本有变化，更新内容
+      if (originalText !== trimmedText) {
+        mark.textContent = trimmedText;
+      }
+
+      // 同时处理内部的多个连续空格
+      const normalizedText = trimmedText.replace(/\s+/g, " ");
+      if (trimmedText !== normalizedText) {
+        mark.textContent = normalizedText;
+      }
+    });
+  }
+
+  // 监听搜索结果变化
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === "childList") {
+        updateDrawerScrollbar();
+        // 处理mark标签中的空格
+        processMarkTags();
+      }
+    });
+  });
+
+  // 修改搜索输入框的placeholder文本
+  function updateSearchPlaceholder() {
+    const searchInput = document.querySelector(
+      ".pagefind-ui-modal .pagefind-ui__search-input"
+    );
+    if (searchInput) {
+      searchInput.placeholder = "搜索文章、小册、随笔..."; // 自定义placeholder文本
+    }
+  }
+
+  // 当搜索模态框打开时开始监听
+  const originalOpen = window.searchModalController.open;
+  window.searchModalController.open = function () {
+    originalOpen();
+
+    // 立即更新搜索输入框placeholder
+    updateSearchPlaceholder();
+
+    setTimeout(function () {
+      const drawer = document.querySelector(
+        ".pagefind-ui-modal .pagefind-ui__drawer"
+      );
+      if (drawer) {
+        updateDrawerScrollbar();
+        // 初始处理mark标签
+        processMarkTags();
+        observer.observe(drawer, { childList: true, subtree: true });
+      }
+    }, 300);
+  };
+
+  // 当搜索模态框关闭时停止监听
+  const originalClose = window.searchModalController.close;
+  window.searchModalController.close = function () {
+    observer.disconnect();
+    originalClose();
+  };
+
+  // 监听搜索输入，实时处理mark标签
+  document.addEventListener("input", function (event) {
+    if (event.target.matches('.pagefind-ui-modal input[type="search"]')) {
+      // 延迟处理，等待搜索结果更新
+      setTimeout(processMarkTags, 100);
+    }
+  });
+</script>  </header> <!-- 主题初始化与切换 --> <script>
+  // 主题初始化 - 最先执行避免闪烁
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  })();
+
+  // 切换主题
+  function toggleTheme() {
+    if (typeof window === "undefined") return;
+
+    const isDark = document.documentElement.classList.contains("dark");
+
+    if (isDark) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  }
+</script> <!-- 布局宽度管理 --> <script>
+  // 布局宽度管理 - 初始化与切换（防闪烁优化）
+  (function () {
+    const LAYOUT_KEY = "layoutWidth";
+    const WIDE_CLASS = "w-full";
+    const NARROW_CLASS = "container";
+
+    // 预初始化：在DOM解析阶段应用保存的设置
+    function preInitLayoutWidth() {
+      const saved = localStorage.getItem(LAYOUT_KEY);
+      if (saved === "wide") {
+        // 使用CSSOM直接操作，避免重绘
+        const style = document.createElement("style");
+        style.textContent =
+          ".layout { width: 100% !important; max-width: none !important; }";
+        style.id = "layout-preinit";
+        document.head.appendChild(style);
+      }
+    }
+
+    // 应用布局宽度到所有元素
+    function applyLayoutWidth(isWide) {
+      // 移除预初始化样式
+      const preinitStyle = document.getElementById("layout-preinit");
+      if (preinitStyle) preinitStyle.remove();
+
+      document.querySelectorAll(".layout").forEach((el) => {
+        el.classList.toggle(WIDE_CLASS, isWide);
+        el.classList.toggle(NARROW_CLASS, !isWide);
+      });
+    }
+
+    // 初始化布局宽度
+    function initLayoutWidth() {
+      const saved = localStorage.getItem(LAYOUT_KEY);
+      if (saved === "wide") applyLayoutWidth(true);
+    }
+
+    // 切换布局宽度
+    window.toggleLayoutWidth = function () {
+      const current = localStorage.getItem(LAYOUT_KEY) === "wide";
+      const next = !current;
+
+      applyLayoutWidth(next);
+      localStorage.setItem(LAYOUT_KEY, next ? "wide" : "narrow");
+
+      // 验证修正（防抖）
+      clearTimeout(window._layoutVerifyTimer);
+      window._layoutVerifyTimer = setTimeout(() => {
+        const shouldBeWide = localStorage.getItem(LAYOUT_KEY) === "wide";
+        document.querySelectorAll(".layout").forEach((el) => {
+          const isWide = el.classList.contains(WIDE_CLASS);
+          if (shouldBeWide !== isWide) {
+            el.classList.toggle(WIDE_CLASS, shouldBeWide);
+            el.classList.toggle(NARROW_CLASS, !shouldBeWide);
+          }
+        });
+      }, 50);
+    };
+
+    // 预初始化（在DOM解析阶段执行）
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", preInitLayoutWidth);
+    } else {
+      preInitLayoutWidth();
+    }
+
+    // 完整初始化（DOM就绪后）
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initLayoutWidth);
+    } else {
+      requestAnimationFrame(initLayoutWidth);
+    }
+  })();
+</script> <!-- 菜单和搜索控制 --> <script>
+  // 打开右侧菜单抽屉
+  function openRightMenuDrawer() {
+    if (typeof window === "undefined") return;
+
+    if (
+      window.rightMenuDrawerController &&
+      typeof window.rightMenuDrawerController.open === "function"
+    ) {
+      window.rightMenuDrawerController.open();
+    }
+  }
+
+  // 打开搜索模态框
+  function openSearchModal() {
+    if (typeof window === "undefined") return;
+
+    if (
+      window.searchModalController &&
+      typeof window.searchModalController.open === "function"
+    ) {
+      window.searchModalController.open();
+    }
+  }
+</script> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full" aria-hidden="true"></div> <!-- 内容区域 - 可滚动 --> <main id="content-container" class="flex-1 overflow-y-auto flex flex-col transition-all duration-300 ease-in-out"> <!-- 内容包装器 --> <div class="container mx-auto p-4 w-full content layout flex-1 py-4 lg:py-6 flex flex-col gap-y-4 lg:gap-y-6">  <!-- 主容器：左右分栏布局 --><section class="post_list w-full flex flex-col lg:flex-row gap-4 lg:gap-6"> <!-- 左侧区域：分类筛选区域 --> <aside class="lg:w-1/5 lg:sticky lg:top-6 lg:self-start lg:overflow-y-auto flex flex-col gap-4"> <!-- 标题 和 描述 --> <header class="post_card__header"> <div class="flex items-center gap-2 mb-2 text-primary transition-colors duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notepad-text"> <path d="M8 2v4"></path><path d="M12 2v4"></path><path d="M16 2v4"></path><rect width="16" height="18" x="4" y="4" rx="2"></rect><path d="M8 10h6"></path><path d="M8 14h8"></path><path d="M8 18h5"></path>  </svg> <h2 class="post_card__title text-2xl md:text-3xl font-bold"> 文章列表 </h2> </div> <p title="作者原创的技术思考与实践分享，记录开发路上的点滴感悟" class="post_card__description max-w-2xl text-muted-foreground leading-relaxed transition-colors duration-300"> 作者原创的技术思考与实践分享，记录开发路上的点滴感悟 </p> </header> <!-- 分隔线 --> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full" aria-hidden="true"></div> <!-- 分类筛选区域 --> <nav class="max-h-158 overflow-y-auto scroll-smooth" id="categories-scroll-container"> <div class="blog1__categories space-y-3 mb-6">  <button data-category="all" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-1.5 px-3 w-full justify-start category-btn category-btn-ghost hover:bg-primary/10 hover:text-primary data-[active=true]:bg-primary data-[active=true]:text-primary-foreground data-[active=true]:shadow-sm data-[active=true]:shadow-primary/20 cursor-pointer select-none">  <span class="inline-flex gap-x-2 items-center h-full w-full"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grid-3x3"> <rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path><path d="M15 3v18"></path>  </svg> <span>全部</span> <span class="ml-auto text-xs bg-secondary text-secondary-foreground font-medium px-2 py-0.5 rounded-full leading-5 transition-colors duration-200"> 1 </span> </span>  </button> <!-- 分类列表 --> <button data-category="CI/CD" data-has-color="true" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-1.5 px-3 w-full justify-start category-btn category-btn-ghost hover:bg-primary/10 hover:text-primary data-[active=true]:bg-primary data-[active=true]:text-primary-foreground data-[active=true]:shadow-sm data-[active=true]:shadow-primary/20 cursor-pointer select-none data-[has-color=true]:hover:opacity-90 data-[has-color=true]:transition-opacity">  <span class="inline-flex gap-x-2 items-center h-full w-full"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers"> <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>  </svg> <span>CI/CD</span> <span class="ml-auto text-xs bg-secondary text-secondary-foreground font-medium px-2 py-0.5 rounded-full leading-5 transition-colors duration-200 data-[active=true]:bg-primary-foreground data-[active=true]:text-primary"> 1 </span> </span>  </button> </div> </nav> </aside> <!-- 右侧区域：文章列表和分页 --> <main class="lg:w-4/5"> <!-- 文章列表容器 --> <section id="posts-container" class="blog1__content flex flex-col gap-4 lg:gap-6"> <!-- 内容由JavaScript动态渲染 --> </section> <!-- 分页控件 --> <footer class="mt-6"> <div class="flex flex-col sm:flex-row justify-between items-center gap-4"> <!-- 文章统计信息 --> <div class="text-sm text-muted-foreground">
+共 <span id="total-count">1</span> 篇文章
+</div> <!-- 分页导航 --> <nav id="pagination" class="flex items-center gap-1"> <!-- 上一页按钮 --> <button id="prevPage" disabled class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 hidden sm:flex cursor-pointer select-none">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"> <path d="m15 18-6-6 6-6"></path>  </svg>
+上一页
+ </button> <!-- 页码信息 --> <div id="pageInfo" class="px-2 py-1 text-sm font-medium">
+第 1/<span id="total-pages">1</span> 页
+</div> <!-- 下一页按钮 --> <button id="nextPage" disabled class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 hidden sm:flex cursor-pointer select-none"> 
+下一页
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"> <path d="m9 18 6-6-6-6"></path>  </svg>  </button> </nav> </div> </footer> </main> </section> <!-- 文章卡片模板 --> <template id="blog-card-template"> <article class="group relative bg-card text-card-foreground backdrop-blur-sm rounded-xl border border-border/50 overflow-hidden hover:shadow-sm hover:shadow-primary/10 transition-all duration-500"> <div style="--border-radius:12px;--border-width:2px;--duration:8s;background-image:radial-gradient(transparent,transparent,#f97316,#eab308,transparent,transparent);background-size:300% 300%;mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);-webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;padding:var(--border-width);border-radius:var(--border-radius)" class="pointer-events-none absolute inset-0 size-full rounded-[inherit] will-change-[background-position] motion-safe:animate-glow opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50" data-astro-cid-fjlmw5md></div>   <div class="flag-container absolute -top-[1px] -right-[1px] z-20 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-105"> <span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-sm font-medium transition-colors duration-200 bg-secondary text-secondary-foreground hover:bg-secondary/80 pl-3 pr-3.5 pt-1.5 pb-1 text-xs font-semibold backdrop-blur-sm !rounded-tr-xl !rounded-bl-xl !rounded-tl-none !rounded-br-none">  <span class="flag-text"></span>  </span> </div> <div class="flex flex-col lg:flex-row h-full"> <!-- 封面图片区域 --> <div class="relative w-full lg:w-1/3 lg:min-w-40 overflow-hidden h-48 lg:h-auto lg:self-stretch z-10 cover-container order-1 lg:order-2"> <img class="w-full h-full object-cover cover-image select-none pointer-events-none transition-transform duration-700 group-hover:scale-110" loading="eager"> <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> </div> <!-- 内容区域 --> <div class="flex-1 p-4 lg:pb-3 space-y-3 flex flex-col justify-between min-h-0 order-2 lg:order-1"> <!-- 分类和日期 --> <div class="flex items-center justify-between"> <span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-sm font-medium transition-colors duration-200 bg-primary text-primary-foreground hover:bg-primary/90 group rounded-md category-badge">  <a class="inline-flex gap-x-1 items-center h-5 leading-5 cursor-pointer category-link"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers"> <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>  </svg> <span class="category-text"></span> </a>  </span> <span class="text-sm text-muted-foreground flex items-center gap-x-1 h-5 leading-5 cursor-default"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days transition-colors duration-300"> <path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path>  </svg> <span class="publish-date transition-colors duration-300"></span> </span> </div> <!-- 文章标题 --> <h3 class="text-xl font-bold leading-tight line-clamp-1 mb-2"> <a class="text-foreground hover:text-primary transition-colors duration-300 title-link"> <span class="title-text"></span> </a> </h3> <!-- 文章描述 --> <p class="text-muted-foreground text-sm leading-relaxed line-clamp-2 h-12 description-text" title=""></p> <!-- 标签容器 --> <div class="tags-container flex overflow-hidden whitespace-nowrap"></div> <!-- 底部信息：作者和统计 --> <div class="pt-2 border-t border-border/50 group-hover:border-border/80 transition-colors duration-500"> <div class="flex items-center justify-between"> <!-- 作者信息 --> <div class="flex items-center gap-1 author-info cursor-default" title=""> <div class="transition-all duration-300 ease-in-out h-6 w-6 overflow-hidden rounded-full author-avatar"> <img class="h-full w-full object-cover" loading="lazy"> </div> <div> <span class="text-sm font-medium text-foreground author-name transition-colors duration-300"></span> </div> </div> <!-- 统计信息和操作按钮 --> <div class="flex items-center gap-3 action-buttons"> <!-- 总字数 --> <div class="flex items-center gap-x-1 text-sm text-muted-foreground word-count-container h-5 leading-5 transition-colors duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"> <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>  </svg> <span class="transition-colors duration-300"> <span class="word-count-text"></span>字
+</span> </div> <!-- 阅读时间 --> <div class="flex items-center gap-x-1 text-sm text-muted-foreground reading-time h-5 leading-5 transition-colors duration-300"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"> <path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle>  </svg> <span class="reading-time-text transition-colors duration-300"></span> </div> <!-- 查看详情链接 --> <a class="text-sm font-semibold text-primary hover:text-primary/80 flex items-center gap-1 group/link relative transition-all duration-300 view-details ml-auto">
+查看详情
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right transition-transform duration-300 group-hover/link:translate-x-0.5"> <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>  </svg> <span class="absolute left-0 bottom-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover/link:w-full"></span> </a> </div> </div> </div> </div> </div> </article> </template> <script>(function(){const postsData = [{"id":"通过 Github 自动部署构建 Pages 页面.md","slug":"通过-github-自动部署构建-pages-页面","body":"## 引言\n\n在默认模式下，GitHub Pages 只能读取公开仓库的静态文件，这就意味着如果想用 Pages 做演示，就必须要要包源码一并公开。\n\n为了让源码继续留在私有仓库受保护，同时又能自动把构建产物发布到公开 Pages，我们可以借助 GitHub Actions，即私有仓库负责源码存储与构建 -> Actions 自动 push 产物到公开仓库 -> 公开仓库仅仅做 Pages 托管。这样既能保持源代码私有化，又能享受 GitHub 免费的静态站点服务，实现源码与部署完全分离。\n\n**下面按顺序给出 5 步可落地操作，15 分钟即可跑通整条链路。**\n\n## 步骤1：准备两个仓库\n\nGitHub 右上方菜单 -> Create new... -> New repository，创建一个私有仓库和一个公开仓库。\n\n![](assets/image-20251103233335.png)\n\n## 步骤2：创建 Personal access tokens (classic)\n\nGitHub 右上角头像 -> Settings -> Developer settings -> Personal access tokens -> Tokens (classic) -> Generate new token -> Generate new token (classic)，创建一个 personal access token (classic)。\n\n**注意**：这个 Token 生成后，只在第一次可见，之后就不可见了，一定要要保存好。格式：`ghp_xxxx`。\n\n![](assets/image-20251104201522.png)\n\n## 步骤3：将申请的 Token 存入到私有仓库的 Secrets 中\n\n进入私有仓库 -> Settings -> Secrets and variables → Actions → New repository secret，Name 填 `PUBLIC_REPO_TOKEN`，Value 贴刚才的申请的 Token 值。\n\n**注意**：Name 可自定义，但需要和下面 Actions 的 personal_token 这个名称保持一致。\n\n![](assets/image-20251104202326.png)\n\n## 步骤4：在私有仓库中新建 Actions 工作流\n\n在私有仓库中创建 `.github/workflows/deploy.yml` 文件，内容示例（以 Astro 为例）：\n\n```yaml\nname: your-action-deploy-name\n\non:\n  push:\n    branches:\n      - main\n\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout private repo\n        uses: actions/checkout@v4\n\n      - name: Setup Node.js\n        uses: actions/setup-node@v4\n        with:\n          node-version: 22.14.0\n\n      - name: Install pnpm\n        uses: pnpm/action-setup@v2\n        with:\n          version: 8\n\n      - name: Install dependencies\n        run: pnpm install\n\n      - name: Build Astro project\n        run: pnpm run build\n\n      # 构建结果推送至公开仓库\n      - name: Deploy to public repo \n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          personal_token: ${{ secrets.PUBLIC_REPO_TOKEN }}\n          # 公开仓库的项目名称\n          external_repository: your-github-name/your-public-repository\n          publish_branch: gh-pages\n          publish_dir: ./dist\n          force_orphan: true\n```\n\n**核心推送关键**：\n\n```yaml\n# 构建结果推送至公开仓库\n- name: Deploy to public repo \n  uses: peaceiris/actions-gh-pages@v3\n  with:\n    # 配置到私有仓库密钥的名称 PUBLIC_REPO_TOKEN\n    personal_token: ${{ secrets.PUBLIC_REPO_TOKEN }}\n    # 公开仓库的项目名称\n    external_repository: your-github-name/your-public-repository\n    # 公开仓库的项目分支 gh-pages\n    publish_branch: gh-pages\n    # 推送dist目录下所有内容\n    publish_dir: ./dist\n    # 强制全新的 commit 覆盖分支的所有内容；true：历史全部丢弃\n    force_orphan: true\n```\n\n## 步骤5：公开仓库开启 GitHub Pages\n\n公开仓库 -> Code 创建 gh-pages 分支 -> Settings -> Pages -> 设置访问页面分支。\n\n**注意**：可在 Custom domain 自定义域名，自定义时别忘记添加域名解析 CNAME 记录。\n\n![](assets/image-20251104202656.png)\n\n## 步骤6：搭建完成，流程启动\n\n流程执行过程：\n\n1. 本地调整代码 -> push 到私有仓库。\n2. 私有仓库 Actions 自动构建 -> 把静态文件推送到公开仓库。\n3. GitHub Pages 自动更新，线上立即生效。\n\n全程保证源码始终在私有仓库中存储，公开仓库只有编译后的文件，无历史记录，达到“源码私有 + 站点公开”的目的。\n\n## 常见问题\n\n### 1. 权限报错 403\n\n> 检查 Token 是否对 `public_repo` 有读写权限。仓库路径是否有错误。\n\n### 2. Pages 404\n\n> 确认公开仓库是否开启 Pages，选择的分支与私有仓库 workflow 推送的是否一致；产物目录是否包含 index.html。\n\n### 3. 保留历史 commit\n\n> 将 `force_orphan:ture` 改为 `force_orphan:false`，公开仓库会带 commit 记录。\n\n**核心改造点**：\n\n```yaml\n- uses: peaceiris/actions-gh-pages@v3\n  with:\n\t# 其他配置...\n    # 保留完整 Git 历史\n    force_orphan: false\n    # 可选：沿用源码仓库的 commit msg\n    commit_message: ${{ github.event.head_commit.message }}\n```\n\n### 4. 慢构建/内存溢出 \n\n> 加 `NODE_OPTIONS: --max-old-space-size=8`，或换 `runs-on: ubuntu-latest-4-cores`\n\n**注意**：`runs-on: ubuntu-latest-4-cores` 属于 GitHub 的付费功能，仅在 Team 或 Enterprise 云计划中可用。免费用户只能使用 `runs-on: ubuntu-latest`（2 核 7 GB）。\n\n**`NODE_OPTIONS` 改造示例**：\n\n```yaml\n- name: Build Astro project\n  env:\n    # 8 GB，可再提高到 16384\n    NODE_OPTIONS: --max-old-space-size=8192\n  run: pnpm run build\n```\n\n**`runs-on` 改造示例**：\n\n```yaml\njobs:\n  build-and-deploy:\n    # GitHub 官方 4 核 16 GB 机型\n    runs-on: ubuntu-latest-4-cores\n```","collection":"posts","data":{"title":"通过 Github 自动部署构建 Pages 页面","description":"通过 GitHub Actions 打通「私有源码仓库 → 公开仓库 Pages」的自动部署链路，让代码私有、站点公开，一键发布。","author":"Yumih","authorAvatar":"/coding-one-more-time/avatar.jpg","authorDescription":"7分技术，3分管理，2分运气","category":"CI/CD","tags":["Github","自动部署","CD"],"flag":null,"chapter":null,"cover":"/coding-one-more-time/cover/github_auto_deploy.webp","publishTime":"2025年10月31日","updateTime":"2025年11月04日","wordCount":1066,"readingTime":"约5分钟"}}];
+const postsPerPage = 6;
+const categories = [{"category":"CI/CD","count":1}];
+const color = ["#f97316","#eab308"];
+const basePath = "/coding-one-more-time/posts/";
+const categoriesPath = "";
+const tagsPath = "";
+const flagColors = {"必读文章":"!bg-red-600 !text-white","推荐":"!bg-red-500 !text-white","热门":"!bg-orange-500 !text-white","精选":"!bg-yellow-500 !text-black","置顶":"!bg-green-600 !text-white","重要":"!bg-blue-600 !text-white","最新":"!bg-indigo-600 !text-white","公告":"!bg-purple-600 !text-white","活动":"!bg-pink-600 !text-white","教程":"!bg-teal-600 !text-white","技巧":"!bg-cyan-600 !text-white","分享":"!bg-emerald-600 !text-white","原创":"!bg-lime-600 !text-black","转载":"!bg-amber-600 !text-black","翻译":"!bg-violet-600 !text-white","笔记":"!bg-slate-600 !text-white","日记":"!bg-zinc-600 !text-white","总结":"!bg-stone-600 !text-white","项目":"!bg-rose-600 !text-white","工具":"!bg-sky-600 !text-white","资源":"!bg-fuchsia-600 !text-white","入门系列":"!bg-blue-500 !text-white","基础教程":"!bg-blue-600 !text-white","前端框架":"!bg-indigo-600 !text-white","前端技术":"!bg-cyan-600 !text-white","技术分享":"!bg-blue-700 !text-white","basics":"!bg-indigo-500 !text-white","category1":"!bg-slate-600 !text-white","Astro":"!bg-orange-500 !text-white","前端":"!bg-green-600 !text-white","JavaScript":"!bg-yellow-500 !text-black","TypeScript":"!bg-blue-600 !text-white","React":"!bg-cyan-600 !text-white","Vue":"!bg-green-500 !text-white","Angular":"!bg-red-600 !text-white","Node.js":"!bg-green-700 !text-white","CSS":"!bg-blue-500 !text-white","HTML":"!bg-orange-600 !text-white","Python":"!bg-yellow-600 !text-black","Java":"!bg-red-700 !text-white","Go":"!bg-cyan-700 !text-white","Rust":"!bg-orange-700 !text-white","PHP":"!bg-purple-600 !text-white","Ruby":"!bg-red-600 !text-white","Next.js":"!bg-gray-800 !text-white","Nuxt":"!bg-green-600 !text-white","Svelte":"!bg-orange-600 !text-white","Tailwind":"!bg-cyan-500 !text-white","Bootstrap":"!bg-purple-600 !text-white","Material-UI":"!bg-blue-600 !text-white","Ant Design":"!bg-blue-700 !text-white","Element UI":"!bg-blue-500 !text-white","Git":"!bg-red-600 !text-white","Docker":"!bg-blue-600 !text-white","Webpack":"!bg-blue-700 !text-white","Vite":"!bg-purple-600 !text-white","ESLint":"!bg-purple-700 !text-white","Prettier":"!bg-pink-600 !text-white","VSCode":"!bg-blue-500 !text-white","静态网站":"!bg-indigo-600 !text-white","性能优化":"!bg-orange-600 !text-white","UI 设计":"!bg-purple-600 !text-white","UX设计":"!bg-pink-600 !text-white","响应式":"!bg-teal-600 !text-white","移动端":"!bg-green-600 !text-white","后端":"!bg-gray-700 !text-white","数据库":"!bg-orange-700 !text-white","API":"!bg-blue-600 !text-white","微服务":"!bg-indigo-700 !text-white","云计算":"!bg-cyan-700 !text-white","AI":"!bg-purple-700 !text-white","机器学习":"!bg-green-700 !text-white","区块链":"!bg-orange-700 !text-white","测试":"!bg-gray-600 !text-white","调试":"!bg-red-600 !text-white","部署":"!bg-green-600 !text-white","CI/CD":"!bg-blue-700 !text-white","敏捷开发":"!bg-green-700 !text-white","重构":"!bg-yellow-600 !text-black","架构":"!bg-purple-700 !text-white","算法":"!bg-indigo-700 !text-white","数据结构":"!bg-teal-700 !text-white","设计模式":"!bg-orange-700 !text-white","个人":"!bg-pink-600 !text-white","关于":"!bg-purple-600 !text-white","其他":"!bg-gray-600 !text-white","随笔":"!bg-slate-600 !text-white","生活":"!bg-rose-600 !text-white","旅行":"!bg-emerald-600 !text-white","读书":"!bg-amber-600 !text-black","音乐":"!bg-violet-600 !text-white","电影":"!bg-red-600 !text-white","游戏":"!bg-purple-600 !text-white","美食":"!bg-orange-600 !text-white","健康":"!bg-green-600 !text-white","运动":"!bg-blue-600 !text-white"};
+
+  // 常量定义
+  const CONSTANTS = {
+    DEFAULT_AVATAR: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40NzcgMiAyIDYuNDc3IDIgMTJDNi40NzcgMjIgMTIgMTIgMTIgMjJDNy41MjMgMjIgMiAyMiAyIDEyQzIgNi40NzcgNi40NzcgMiAxMiAyWiIgZmlsbD0iI2U1ZTdlYSIvPgo8cGF0aCBkPSJNMTIgMTJDNi40NzcgMTIgMiAxMiAyIDEyQzIgMTcuNTIzIDYuNDc3IDIyIDEyIDIyQzE3LjUyMyAyMiAyMiAxNy41MjMgMjIgMTJDMjIgMTIgMTcuNTIzIDEyIDEyIDEyWiIgZmlsbD0iI2E4YTFiYiIvPgo8cGF0aCBkPSJNMTIgMTJDMTIgMTMuNjU3IDEwLjY1NyAxNSA5IDE1QzcuMzQzIDE1IDYgMTMuNjU3IDYgMTJDNiAxMC4zNDMgNy4zNDMgOSA5IDlDMTAuNjU3IDkgMTIgMTAuMzQzIDEyIDEyWiIgZmlsbD0iIzZiNzI4MCIvPgo8cGF0aCBkPSJNMTUgMTJDMTUgMTQuMjA5IDEzLjIwOSAxNiAxMSAxNkM4Ljc5MSAxNiA3IDE0LjIwOSA3IDEyQzcgOS43OTEgOC43OTEgOCAxMSA4QzEzLjIwOSA4IDE1IDkuNzkxIDE1IDEyWiIgZmlsbD0iIzM3NDE1MSIvPgo8L3N2Zz4K",
+    TAGS_PER_CARD: 4,
+    WORDS_PER_MINUTE: 200,
+    DESCRIPTION_WORD_RATIO: 1.5,
+    TRANSITION_DURATION: 300,
+    SCROLL_DELAY: 50,
+    CONTENT_SWITCH_DELAY: 150
+  };
+
+  // 图标SVG常量
+  const ICONS = {
+    TAG: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag-icon lucide-tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
+    PLUS: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>',
+    EMPTY: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text mx-auto mb-4"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>'
+  };
+
+  // 状态管理
+  const state = {
+    filteredPosts: [...postsData],
+    currentCategory: "all",
+    currentPage: 1
+  };
+
+  // DOM元素缓存
+  const elements = {
+    postsContainer: document.getElementById("posts-container"),
+    prevBtn: document.getElementById("prevPage"),
+    nextBtn: document.getElementById("nextPage"),
+    pageInfo: document.getElementById("pageInfo"),
+    totalCount: document.getElementById("total-count"),
+    totalPagesEl: document.getElementById("total-pages")
+  };
+
+  // 工具函数
+  const utils = {
+    formatCount: (n) => {
+      if (n < 1_000) return String(n);
+      if (n < 10_000) return (n / 1_000).toFixed(1).replace(/\.0$/, '') + 'k';
+      if (n < 1_000_000) return (n / 10_000).toFixed(1).replace(/\.0$/, '') + 'w';
+      if (n < 1_000_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'm';
+      if (n < 1_000_000_000_000) return (n / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'b';
+      return '999.9t+';
+    },
+
+    estimateWordCount: (description, wordCount) => {
+      if (wordCount !== undefined && wordCount > 0) return wordCount;
+      if (description) return Math.round(description.length * CONSTANTS.DESCRIPTION_WORD_RATIO);
+      return 0;
+    },
+
+    estimateReadingTime: (wordCount) => {
+      const minutes = Math.max(1, Math.round(wordCount / CONSTANTS.WORDS_PER_MINUTE));
+      return `${minutes} 分钟`;
+    },
+
+    scrollToTop: () => {
+      const scrollContainer = document.getElementById('content-container');
+      const target = scrollContainer || window;
+      target.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  // 分类处理函数
+  const categoryHandlers = {
+    createCategoryElement: (category, hasPath) => {
+      const categoryEl = document.createElement('span');
+      categoryEl.className = 'group mr-1.5 rounded-xl px-2 py-0.5 h-6 text-xs font-medium';
+      
+      // 添加flagColors样式
+      if (flagColors[category]) {
+        categoryEl.classList.add(...flagColors[category].split(' '));
+      } else {
+        categoryEl.classList.add('bg-secondary', 'text-secondary-foreground');
+      }
+      
+      if (hasPath) {
+        categoryEl.innerHTML = `<a href="${categoriesPath}${category}" title="${category}" class="inline-flex gap-x-1 items-center h-5 cursor-pointer">${ICONS.TAG}${category}</a>`;
+      } else {
+        categoryEl.innerHTML = `<span class="inline-flex gap-x-1 items-center h-5 cursor-default">${ICONS.TAG}${category}</span>`;
+      }
+      
+      return categoryEl;
+    },
+
+    createMoreTagsElement: (remainingCount) => {
+      const moreEl = document.createElement('span');
+      moreEl.className = 'group rounded-xl bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground';
+      moreEl.innerHTML = `<span class="inline-flex gap-x-0.5 items-center h-5 cursor-pointer" title="剩余 ${remainingCount} 个标签">${ICONS.PLUS}<span>${remainingCount}</span></span>`;
+      return moreEl;
+    }
+  };
+
+  // 文章卡片创建函数
+  const cardCreators = {
+    setupCategory: (card, post) => {
+      const categoryBadge = card.querySelector(".category-badge");
+      const categoryText = card.querySelector(".category-text");
+      
+      if (post.data.category) {
+        categoryText.textContent = post.data.category;
+        
+        // 添加flagColors样式
+        if (flagColors[post.data.category]) {
+          categoryBadge.classList.add(...flagColors[post.data.category].split(' '));
+        }
+        
+        const hasCategoriesPath = categoriesPath && categoriesPath.trim() !== '';
+        
+        if (hasCategoriesPath) {
+          const linkEl = categoryBadge.querySelector("a");
+          linkEl.href = `${categoriesPath}${post.data.category}`;
+          linkEl.classList.add('cursor-pointer');
+        } else {
+          const linkEl = categoryBadge.querySelector("a");
+          const iconHtml = linkEl.querySelector("svg")?.outerHTML || '';
+          linkEl.parentNode.innerHTML = `${iconHtml}<span class="category-text cursor-default">${post.data.category}</span>`;
+        }
+      } else {
+        categoryBadge.style.display = "none";
+      }
+    },
+
+    setupTags: (card, post) => {
+      const tagsContainer = card.querySelector(".tags-container");
+      const hasTagsPath = tagsPath && tagsPath.trim() !== '';
+      
+      if (post.data.tags && post.data.tags.length > 0) {
+        const displayTags = post.data.tags.slice(0, CONSTANTS.TAGS_PER_CARD);
+        
+        displayTags.forEach(tag => {
+          const badge = document.createElement('span');
+          badge.className = 'group mr-2 rounded-xl px-2 py-0.5 h-6 text-xs font-medium';
+          
+          // 添加flagColors样式
+          if (flagColors[tag]) {
+            badge.classList.add(...flagColors[tag].split(' '));
+          } else {
+            badge.classList.add('bg-secondary', 'text-secondary-foreground');
+          }
+          
+          if (hasTagsPath) {
+            badge.innerHTML = `<a href="${tagsPath}${tag}" title="${tag}" class="inline-flex gap-x-1 items-center h-5 cursor-pointer">${ICONS.TAG}<span>${tag}</span></a>`;
+          } else {
+            badge.innerHTML = `<span class="inline-flex gap-x-1 items-center h-5 cursor-default" title="${tag}">${ICONS.TAG}<span>${tag}</span></span>`;
+          }
+          
+          tagsContainer.appendChild(badge);
+        });
+        
+        if (post.data.tags.length > CONSTANTS.TAGS_PER_CARD) {
+          const moreBadge = document.createElement('span');
+          moreBadge.className = 'group rounded-xl bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground';
+          moreBadge.innerHTML = `<span class="inline-flex gap-x-0.5 items-center h-5 cursor-pointer" title="${post.data.tags.slice(CONSTANTS.TAGS_PER_CARD).join("；")}">${ICONS.PLUS}<span>${post.data.tags.length - CONSTANTS.TAGS_PER_CARD}</span></span>`;
+          tagsContainer.appendChild(moreBadge);
+        }
+      }
+    },
+
+    setupAuthor: (card, post) => {
+      const authorInfo = card.querySelector(".author-info");
+      const authorName = card.querySelector(".author-name");
+      const authorAvatar = card.querySelector(".author-avatar img");
+      
+      if (post.data.author) {
+        authorName.textContent = post.data.author;
+        authorAvatar.src = post.data.authorAvatar || CONSTANTS.DEFAULT_AVATAR;
+        authorAvatar.alt = post.data.author;
+      } else {
+        authorInfo.style.display = "none";
+      }
+    },
+
+    setupStats: (card, post) => {
+      const wordCount = utils.estimateWordCount(post.data.description, post.data.wordCount);
+      const readingTime = post.data.readingTime || utils.estimateReadingTime(wordCount);
+      
+      card.querySelector(".word-count-text").textContent = utils.formatCount(wordCount);
+      card.querySelector(".reading-time-text").textContent = readingTime;
+    },
+
+    setupCover: (card, post) => {
+      const coverImage = card.querySelector(".cover-image");
+      const coverContainer = card.querySelector(".cover-container");
+      const titleText = post.data.title || post.slug;
+      
+      if (post.data.cover) {
+        coverImage.src = post.data.cover;
+        coverImage.alt = titleText;
+        coverContainer.style.display = "block";
+      } else {
+        coverContainer.style.display = "none";
+      }
+    },
+
+    setupLinks: (card, post) => {
+      const titleLink = card.querySelector(".title-link");
+      const viewDetailsLink = card.querySelector(".view-details");
+      const titleText = post.data.title || post.slug;
+      
+      titleLink.href = `${basePath}${post.slug}`;
+      titleLink.title = titleText;
+      viewDetailsLink.href = `${basePath}${post.slug}`;
+    },
+
+    setupFlag: (card, post) => {
+      const flagContainer = card.querySelector(".flag-container");
+      const flagText = card.querySelector(".flag-text");
+      const flagBadge = card.querySelector(".flag-container > *"); // Target the Badge element directly
+      
+      if (post.data.flag && flagColors[post.data.flag]) {
+        flagText.textContent = post.data.flag;
+        if (flagBadge) {
+          flagBadge.classList.add(...flagColors[post.data.flag].split(' '));
+        }
+        flagContainer.style.display = "block";
+      } else {
+        flagContainer.style.display = "none";
+      }
+    }
+  };
+
+  // 主创建函数
+  function createBlogCard(post) {
+    const template = document.getElementById("blog-card-template");
+    const card = template.content.cloneNode(true);
+    const titleText = post.data.title || post.slug;
+
+    // 设置基本信息
+    card.querySelector(".publish-date").textContent = post.data.publishTime;
+    card.querySelector(".description-text").textContent = post.data.description;
+    
+    // 设置描述和作者信息的title属性
+    if (post.data.description) {
+      card.querySelector(".description-text").setAttribute("title", post.data.description);
+    }
+    if (post.data.authorDescription) {
+      card.querySelector(".author-info").setAttribute("title", post.data.authorDescription);
+    }
+    
+    // 设置标题和链接
+    const titleLink = card.querySelector(".title-link");
+    titleLink.href = `${basePath}${post.slug}`;
+    titleLink.title = titleText;
+    card.querySelector(".title-text").textContent = titleText;
+    
+    // 设置分类、标签、作者、统计信息、封面图、旗帜
+    cardCreators.setupCategory(card, post);
+    cardCreators.setupTags(card, post);
+    cardCreators.setupAuthor(card, post);
+    cardCreators.setupStats(card, post);
+    cardCreators.setupCover(card, post);
+    cardCreators.setupLinks(card, post);
+    cardCreators.setupFlag(card, post);
+
+    return card;
+  }
+
+  // 渲染函数
+  const render = {
+    emptyState: () => {
+      return `
+        <div class="text-center py-12">
+          <div class="text-muted-foreground mb-4">
+            ${ICONS.EMPTY}
+            <p class="text-lg font-medium">暂无文章</p>
+            <p class="text-sm">当前分类下还没有发布任何文章</p>
+          </div>
+        </div>
+      `;
+    },
+
+    posts: (page = 1) => {
+      if (!elements.postsContainer) return;
+
+      const tempContainer = document.createElement('div');
+      tempContainer.className = 'blog1__content flex flex-col gap-4 lg:gap-6 mb-6';
+      tempContainer.style.opacity = '0';
+      tempContainer.style.transition = `opacity ${CONSTANTS.TRANSITION_DURATION}ms ease-in-out`;
+
+      const startIndex = (page - 1) * postsPerPage;
+      const endIndex = startIndex + postsPerPage;
+      const currentPosts = state.filteredPosts.slice(startIndex, endIndex);
+
+      if (currentPosts.length === 0) {
+        tempContainer.innerHTML = render.emptyState();
+      } else {
+        currentPosts.forEach(post => {
+          tempContainer.appendChild(createBlogCard(post));
+        });
+      }
+
+      elements.postsContainer.style.opacity = '0';
+      
+      setTimeout(() => {
+        elements.postsContainer.innerHTML = tempContainer.innerHTML;
+        
+        setTimeout(() => {
+          elements.postsContainer.style.opacity = '1';
+          utils.scrollToTop();
+        }, CONSTANTS.SCROLL_DELAY);
+      }, CONSTANTS.CONTENT_SWITCH_DELAY);
+
+      render.pagination();
+    },
+
+    pagination: () => {
+      if (!elements.prevBtn || !elements.nextBtn || !elements.pageInfo || !elements.totalCount || !elements.totalPagesEl) return;
+
+      const totalFilteredPages = Math.ceil(state.filteredPosts.length / postsPerPage);
+
+      elements.pageInfo.textContent = `第 ${state.currentPage}/${totalFilteredPages} 页`;
+      elements.totalCount.textContent = state.filteredPosts.length;
+      elements.totalPagesEl.textContent = totalFilteredPages;
+
+      elements.prevBtn.disabled = state.currentPage <= 1;
+      elements.nextBtn.disabled = state.currentPage >= totalFilteredPages;
+
+      const updateButtonState = (btn, isDisabled) => {
+        if (isDisabled) {
+          btn.classList.add("opacity-50", "cursor-not-allowed");
+          btn.classList.remove("hover:bg-primary/10", "hover:text-primary");
+        } else {
+          btn.classList.remove("opacity-50", "cursor-not-allowed");
+          btn.classList.add("hover:bg-primary/10", "hover:text-primary");
+        }
+      };
+
+      updateButtonState(elements.prevBtn, elements.prevBtn.disabled);
+      updateButtonState(elements.nextBtn, elements.nextBtn.disabled);
+    }
+  };
+
+  // 事件处理函数
+  const handlers = {
+    filterByCategory: (category) => {
+      state.currentCategory = category;
+      state.currentPage = 1;
+
+      if (category === "all") {
+        state.filteredPosts = [...postsData];
+      } else {
+        state.filteredPosts = postsData.filter(post => post.data.category === category);
+      }
+
+      render.posts(state.currentPage);
+    },
+
+    updateCategoryButtons: (category) => {
+      const categoryButtons = document.querySelectorAll(".category-btn");
+      categoryButtons.forEach(btn => {
+        const isActive = btn.getAttribute("data-category") === category;
+        const hasColor = btn.getAttribute("data-has-color") === 'true';
+        const categoryName = btn.getAttribute("data-category");
+        
+        if (isActive) {
+          btn.setAttribute("data-active", "true");
+          
+          // 如果分类有对应的flagColors，应用动态颜色
+          if (hasColor && flagColors[categoryName]) {
+            // 移除默认的primary样式
+            btn.classList.remove('data-[active=true]:bg-primary', 'data-[active=true]:text-primary-foreground');
+            // 添加flagColors样式
+            btn.classList.add(...flagColors[categoryName].split(' '));
+            
+            // 同时更新计数标签的样式
+            const countBadge = btn.querySelector('.ml-auto');
+            if (countBadge) {
+              countBadge.classList.remove('bg-secondary', 'text-secondary-foreground');
+              countBadge.classList.add('bg-primary-foreground', 'text-primary');
+            }
+          }
+        } else {
+          btn.removeAttribute("data-active");
+          
+          // 恢复默认样式
+          if (hasColor && flagColors[categoryName]) {
+            // 移除flagColors样式
+            btn.classList.remove(...flagColors[categoryName].split(' '));
+            // 恢复默认的primary样式
+            btn.classList.add('data-[active=true]:bg-primary', 'data-[active=true]:text-primary-foreground');
+            
+            // 恢复计数标签的默认样式
+            const countBadge = btn.querySelector('.ml-auto');
+            if (countBadge) {
+              countBadge.classList.remove('bg-primary-foreground', 'text-primary');
+              countBadge.classList.add('bg-secondary', 'text-secondary-foreground');
+            }
+          }
+        }
+      });
+    },
+
+    handleCategoryClick: (e) => {
+      const categoryBtn = e.target.closest(".category-btn");
+      if (!categoryBtn) return;
+      
+      e.preventDefault();
+      const category = categoryBtn.getAttribute("data-category");
+      handlers.filterByCategory(category);
+      handlers.updateCategoryButtons(category);
+    },
+
+    handlePagination: (e, direction) => {
+      e.preventDefault();
+      const totalFilteredPages = Math.ceil(state.filteredPosts.length / postsPerPage);
+      
+      if (direction === 'prev' && state.currentPage > 1) {
+        state.currentPage--;
+      } else if (direction === 'next' && state.currentPage < totalFilteredPages) {
+        state.currentPage++;
+      }
+      
+      render.posts(state.currentPage);
+    }
+  };
+
+  // 事件监听
+  document.addEventListener("click", handlers.handleCategoryClick);
+  
+  if (elements.prevBtn) {
+    elements.prevBtn.addEventListener("click", (e) => handlers.handlePagination(e, 'prev'));
+  }
+  
+  if (elements.nextBtn) {
+    elements.nextBtn.addEventListener("click", (e) => handlers.handlePagination(e, 'next'));
+  }
+
+  // 初始化
+  const initialize = () => {
+    render.posts(state.currentPage);
+    handlers.updateCategoryButtons("all");
+    render.pagination();
+
+    // 滚动容器优化
+    const scrollContainer = document.getElementById("categories-scroll-container");
+    if (scrollContainer) {
+      scrollContainer.style.scrollBehavior = "smooth";
+      
+      const activeTag = scrollContainer.querySelector('[data-active="true"]');
+      if (activeTag) {
+        activeTag.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }
+    }
+  };
+
+  // 页面加载完成后初始化
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initialize);
+  } else {
+    initialize();
+  }
+})();</script>  </div> <!-- 底部区域 --> <div class="mt-auto"> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full" aria-hidden="true"></div> <footer class="flex flex-col gap-1 text-sm text-muted-foreground tracking-wide container mx-auto py-2 footer layout" role="contentinfo"> <!-- 顶部区域：版权信息和运行时间 --> <div class="leading-6 flex justify-between flex-col items-center md:items-stretch md:flex-row"> <!-- 版权信息 --> <div class="flex gap-x-2"> <p>
+© 2025 <a href="https://yumih1129.github.io/coding-one-more-time" class="hover:text-primary hover:font-medium"> 叩钉壹刻 </a>. All rights reserved.
+</p> <span>Vela &amp; Astro</span>  </div> <!-- 日历和社交信息（当beian为空时显示在一起） --> <div class="flex items-center gap-4">  <div class="flex items-center gap-2"> <a href="https://github.com/yumih1129" target="_blank" rel="noopener noreferrer" title="GitHub" class="py-0.5 px-2 rounded-md hover:bg-accent transition-colors duration-200"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"> <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path>  </svg> </a><a href="mailto:yumih1129@163.com" target="_blank" rel="noopener noreferrer" title="邮箱" class="py-0.5 px-2 rounded-md hover:bg-accent transition-colors duration-200"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"> <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect>  </svg> </a><a href="https://yumih1129.github.io/coding-one-more-time/coding-one-more-time/rss.xml" target="_blank" rel="noopener noreferrer" title="RSS" class="py-0.5 px-2 rounded-md hover:bg-accent transition-colors duration-200"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss"> <path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>  </svg> </a> <!-- 许可证信息 --> <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/" class="hover:text-primary hover:font-medium"> CC BY-SA 4.0 </a> </div>  <div class="flex items-center gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-clock"> <path d="M16 14v2.2l1.6 1"></path><path d="M16 2v4"></path><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path><path d="M3 10h5"></path><path d="M8 2v4"></path><circle cx="16" cy="16" r="6"></circle>  </svg> <p class="text-end">
+自2025年08月起运行
+</p> </div> </div> </div> <!-- 底部区域：备案信息和社交链接（当beian不为空时显示） -->  </footer> </div> </main> </main> <!-- 右侧菜单抽屉 --> <!-- 右侧菜单抽屉 --><div id="rightMenuDrawer" class="fixed inset-0 z-50 pointer-events-none transition-colors duration-200 opacity-0" aria-label="导航菜单"> <div id="rightMenuDrawerOverlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-200 opacity-0"></div> <div id="rightMenuDrawerContent" class="absolute bg-background shadow-lg transform transition-transform duration-300 ease-in-out top-0 h-full w-64 sm:w-80 border-l border-border dark:border-slate-800 right-0 translate-x-full"> <div class="px-4 py-3 border-b border-border flex justify-between items-center"> <h4 class="text-base font-medium">菜单</h4> <button id="closeRightMenuDrawer" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9 h-8 w-8 rounded-full">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg>  </button> </div> <div class="p-4 py-3 overflow-y-auto h-full">  <nav aria-label="Menu"><div class="space-y-1"><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/" title="首页" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>  </svg><span class="truncate font-medium" title="首页">首页</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/posts" title="文章" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 bg-gray-100 dark:bg-secondary text-gray-900 dark:text-gray-100" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notepad-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M8 2v4"></path><path d="M12 2v4"></path><path d="M16 2v4"></path><rect width="16" height="18" x="4" y="4" rx="2"></rect><path d="M8 10h6"></path><path d="M8 14h8"></path><path d="M8 18h5"></path>  </svg><span class="truncate font-medium" title="文章">文章</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/docs" title="小册" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><path d="M8 11h8"></path><path d="M8 7h6"></path>  </svg><span class="truncate font-medium" title="小册">小册</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/notes" title="随笔" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M9.5 8h5"></path><path d="M9.5 12H16"></path><path d="M9.5 16H14"></path>  </svg><span class="truncate font-medium" title="随笔">随笔</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/gallery" title="图集" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-image flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="10" cy="8" r="2"></circle>  </svg><span class="truncate font-medium" title="图集">图集</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/links" title="友链" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg><span class="truncate font-medium" title="友链">友链</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/about" title="关于" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info flex-shrink-0 text-gray-500 dark:text-gray-400"> <circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path>  </svg><span class="truncate font-medium" title="关于">关于</span></a></div></div></div></nav><script>
+  // 垂直菜单子菜单切换函数
+  function toggleVerticalSubmenu(event, button) {
+    // 阻止事件冒泡
+    if (event?.stopPropagation) event.stopPropagation();
+    if (!button) return;
+
+    // 找到子菜单元素和图标
+    const menuItem = button.closest("[data-menu-item]");
+    const submenu = menuItem?.querySelector("[data-submenu]");
+    if (!menuItem || !submenu) return;
+
+    // 确定图标位置并检查当前状态
+    const isButtonFullWidth = button.classList.contains("flex-1");
+    const icon = isButtonFullWidth
+      ? button.querySelector("svg:last-child")
+      : button.querySelector("svg");
+    const isOpen = submenu.classList.contains("max-h-0");
+
+    // 执行展开或收起动画
+    if (isOpen) {
+      // 展开动画
+      submenu.setAttribute("data-open", "true");
+
+      // 延迟设置max-h和opacity以确保动画正确触发
+      setTimeout(() => {
+        submenu.classList.add("mt-1");
+
+        // 延迟添加mt-1类使间距变化更自然
+        setTimeout(() => {
+          submenu.classList.remove("max-h-0", "opacity-0");
+          submenu.classList.add("max-h-96", "opacity-100");
+        }, 50);
+      }, 10);
+
+      // 旋转图标
+      if (icon) icon.style.transform = "rotate(180deg)";
+    } else {
+      // 收起动画 - 先移除mt-1类
+      submenu.classList.remove("mt-1");
+
+      // 延迟执行其他收起动画，使间距变化更自然
+      setTimeout(() => {
+        submenu.classList.remove("max-h-96", "opacity-100");
+        submenu.classList.add("max-h-0", "opacity-0");
+
+        // 延迟设置data-open属性
+        setTimeout(() => submenu.setAttribute("data-open", "false"), 150);
+      }, 50);
+
+      // 恢复图标位置
+      if (icon) icon.style.transform = "rotate(0deg)";
+    }
+  }
+
+  // 添加到window对象使全局可访问
+  window.toggleVerticalSubmenu = toggleVerticalSubmenu;
+</script>  </div> </div> </div> <script>(function(){const drawerId = "rightMenuDrawer";
+const position = "right";
+const open = false;
+const onOpenChange = undefined;
+
+  // 抽屉控制函数
+  const drawer = document.getElementById(drawerId);
+  const overlay = document.getElementById(`${drawerId}Overlay`);
+  const content = document.getElementById(`${drawerId}Content`);
+  const closeBtn = document.getElementById(
+    `close${drawerId.charAt(0).toUpperCase() + drawerId.slice(1)}`
+  );
+
+  const drawerController = {
+    open() {
+      if (drawer && overlay && content) {
+        drawer.classList.remove("pointer-events-none", "opacity-0");
+        overlay.classList.remove("opacity-0");
+        content.classList.remove(
+          "translate-x-full",
+          "-translate-x-full",
+          "translate-y-full",
+          "-translate-y-full"
+        );
+        document.body.style.overflow = "hidden";
+
+        // 触发 onOpenChange 回调
+        if (typeof onOpenChange === "function") {
+          onOpenChange(true);
+        }
+      }
+    },
+
+    close() {
+      if (drawer && overlay && content) {
+        overlay.classList.add("opacity-0");
+
+        // 根据位置类型应用正确的移出方向类
+        if (position === "right") {
+          content.classList.add("translate-x-full");
+        } else if (position === "left") {
+          content.classList.add("-translate-x-full");
+        } else if (position === "top") {
+          content.classList.add("-translate-y-full");
+        } else if (position === "bottom") {
+          content.classList.add("translate-y-full");
+        }
+
+        setTimeout(() => {
+          drawer.classList.add("pointer-events-none", "opacity-0");
+          document.body.style.overflow = "";
+
+          // 触发 onOpenChange 回调
+          if (typeof onOpenChange === "function") {
+            onOpenChange(false);
+          }
+        }, 300);
+      }
+    },
+
+    toggle() {
+      if (content) {
+        const isClosed =
+          content.classList.contains("translate-x-full") ||
+          content.classList.contains("-translate-x-full") ||
+          content.classList.contains("translate-y-full") ||
+          content.classList.contains("-translate-y-full");
+
+        if (isClosed) {
+          this.open();
+        } else {
+          this.close();
+        }
+      }
+    },
+  };
+
+  // 将控制器挂载到全局对象，方便外部调用
+  // 使用下划线替代连字符，确保是有效的JavaScript变量名
+  const controllerName = `${drawerId}`.replace(/-/g, "_") + "Controller";
+  window[controllerName] = drawerController;
+
+  // 同时保留原始的控制器名，以便向后兼容
+  window[`${drawerId}Controller`] = drawerController;
+
+  // 初始化事件监听
+  document.addEventListener("DOMContentLoaded", () => {
+    // 初始化显示状态
+    if (open) {
+      drawerController.open();
+    } else {
+      drawerController.close();
+    }
+
+    // 绑定关闭按钮事件
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        drawerController.close();
+      });
+    }
+
+    // 绑定遮罩层点击事件
+    if (overlay) {
+      overlay.addEventListener("click", () => {
+        drawerController.close();
+      });
+    }
+
+    // ESC关闭
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        const isOpen =
+          content &&
+          !(
+            content.classList.contains("translate-x-full") ||
+            content.classList.contains("-translate-x-full") ||
+            content.classList.contains("translate-y-full") ||
+            content.classList.contains("-translate-y-full")
+          );
+
+        if (isOpen) {
+          drawerController.close();
+        }
+      }
+    });
+  });
+})();</script> <script>(function(){const drawerId = "rightMenuDrawer";
+
+  // 提供关闭抽屉的便捷函数
+  window.closeRightMenuDrawer = function () {
+    if (
+      window.rightMenuDrawerController &&
+      typeof window.rightMenuDrawerController.close === "function"
+    ) {
+      window.rightMenuDrawerController.close();
+    }
+  };
+
+  // 定义关闭回调函数
+  window.onCloseRightMenuDrawer = function () {
+    // 可以在这里添加额外的关闭逻辑
+    console.log("右侧菜单抽屉已关闭");
+  };
+
+  // 初始化抽屉控制器引用
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!window.rightMenuDrawerController) {
+      console.warn("右侧菜单抽屉控制器未初始化");
+    }
+  });
+})();</script> </body></html>

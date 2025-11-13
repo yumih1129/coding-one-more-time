@@ -1,0 +1,1369 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap.xml"><meta name="description" content="Java在2025年5月23日，迎来了30周年纪念。JetBrains推出Java 30 Anniversary插件，开发者每次启动开发工具时，都会看到Java的吉祥物Duke出现在启动画面。"><title>
+      叩钉壹刻 - Java 30周年：Duke与你同行🎉
+    </title><link rel="stylesheet" href="/coding-one-more-time/_astro/index.ICWMGL1L.css">
+<style>.giscus[data-astro-cid-svawpu5v]{width:100%;transition:opacity .3s ease-in-out}.giscus-frame{width:100%;min-height:200px;transition:opacity .3s ease-in-out,background-color .3s ease-in-out}.giscus-frame{animation:giscusFadeIn .4s ease-in-out}.giscus-animate[data-astro-cid-svawpu5v]{animation:giscusFadeIn .5s ease-in-out}.giscus[data-astro-cid-svawpu5v].loading{position:relative;min-height:100px}.giscus[data-astro-cid-svawpu5v].loading:before{content:"";position:absolute;top:50%;left:50%;width:24px;height:24px;margin:-12px 0 0 -12px;border:2px solid #e2e8f0;border-top:2px solid #3b82f6;border-radius:50%;animation:giscusSpin 1s linear infinite}@keyframes giscusSpin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.giscus[data-astro-cid-svawpu5v].theme-switching{pointer-events:none}.giscus[data-astro-cid-svawpu5v].theme-switching .giscus-frame{filter:brightness(.9)}@keyframes giscusFadeIn{0%{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+</style></head> <body> <!-- 字体初始化 --> <script type="module" src="/coding-one-more-time/_astro/Main.astro_astro_type_script_index_0_lang.BY1HELZm.js"></script> <!-- 主容器 --> <main class="bg-background text-foreground transition-colors duration-300 flex flex-col justify-between h-screen w-full"> <!-- 头部导航 --> <!-- 头部导航 --><header class="flex justify-between items-center h-14 container mx-auto header layout"> <!-- 左侧区域 --> <div class="header-left flex gap-x-3 items-center"> <!-- Logo --> <a href="https://yumih1129.github.io/coding-one-more-time" title="叩钉壹刻" class="inline-flex items-center transition-colors duration-200"> <img src="/coding-one-more-time/logo.png" alt="叩钉壹刻" loading="eager" decoding="async" inferSize="true" draggable="false" fetchpriority="auto" width="104" height="48" class="w-26 h-12 object-cover pointer-events-none select-none"> </a> <!-- 导航菜单 --> <nav class="hidden lg:flex items-center" aria-label="Menu"><ul class="flex gap-x-1.5 items-center"><li class="relative group" data-menu-item><a href="/coding-one-more-time/" title="首页" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>  </svg><span class="truncate" title="首页">首页</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/posts" title="文章" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notepad-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M8 2v4"></path><path d="M12 2v4"></path><path d="M16 2v4"></path><rect width="16" height="18" x="4" y="4" rx="2"></rect><path d="M8 10h6"></path><path d="M8 14h8"></path><path d="M8 18h5"></path>  </svg><span class="truncate" title="文章">文章</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/docs" title="小册" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><path d="M8 11h8"></path><path d="M8 7h6"></path>  </svg><span class="truncate" title="小册">小册</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/notes" title="随笔" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 bg-gray-100 dark:bg-secondary text-gray-900 dark:text-gray-100"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M9.5 8h5"></path><path d="M9.5 12H16"></path><path d="M9.5 16H14"></path>  </svg><span class="truncate" title="随笔">随笔</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/gallery" title="图集" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-image flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="10" cy="8" r="2"></circle>  </svg><span class="truncate" title="图集">图集</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/links" title="友链" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg><span class="truncate" title="友链">友链</span></a></li><li class="relative group" data-menu-item><a href="/coding-one-more-time/about" title="关于" class="text-sm font-medium px-2.5 py-1.5 flex items-center gap-x-1.5 rounded-md min-w-0 transition-colors group-hover:bg-gray-50 dark:group-hover:bg-sidebar/70 data-[submenu-open]:bg-gray-50 dark:[submenu-open]:bg-sidebar/70 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info flex-shrink-0 text-gray-500 dark:text-gray-400"> <circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path>  </svg><span class="truncate" title="关于">关于</span></a></li></ul></nav><script>
+  // 垂直菜单子菜单切换函数
+  function toggleVerticalSubmenu(event, button) {
+    // 阻止事件冒泡
+    if (event?.stopPropagation) event.stopPropagation();
+    if (!button) return;
+
+    // 找到子菜单元素和图标
+    const menuItem = button.closest("[data-menu-item]");
+    const submenu = menuItem?.querySelector("[data-submenu]");
+    if (!menuItem || !submenu) return;
+
+    // 确定图标位置并检查当前状态
+    const isButtonFullWidth = button.classList.contains("flex-1");
+    const icon = isButtonFullWidth
+      ? button.querySelector("svg:last-child")
+      : button.querySelector("svg");
+    const isOpen = submenu.classList.contains("max-h-0");
+
+    // 执行展开或收起动画
+    if (isOpen) {
+      // 展开动画
+      submenu.setAttribute("data-open", "true");
+
+      // 延迟设置max-h和opacity以确保动画正确触发
+      setTimeout(() => {
+        submenu.classList.add("mt-1");
+
+        // 延迟添加mt-1类使间距变化更自然
+        setTimeout(() => {
+          submenu.classList.remove("max-h-0", "opacity-0");
+          submenu.classList.add("max-h-96", "opacity-100");
+        }, 50);
+      }, 10);
+
+      // 旋转图标
+      if (icon) icon.style.transform = "rotate(180deg)";
+    } else {
+      // 收起动画 - 先移除mt-1类
+      submenu.classList.remove("mt-1");
+
+      // 延迟执行其他收起动画，使间距变化更自然
+      setTimeout(() => {
+        submenu.classList.remove("max-h-96", "opacity-100");
+        submenu.classList.add("max-h-0", "opacity-0");
+
+        // 延迟设置data-open属性
+        setTimeout(() => submenu.setAttribute("data-open", "false"), 150);
+      }, 50);
+
+      // 恢复图标位置
+      if (icon) icon.style.transform = "rotate(0deg)";
+    }
+  }
+
+  // 添加到window对象使全局可访问
+  window.toggleVerticalSubmenu = toggleVerticalSubmenu;
+</script> </div> <!-- 右侧区域 --> <div class="header-right flex gap-x-1 items-center"> <!-- 搜索按钮 --> <button onclick="openSearchModal()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 cursor-pointer">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"> <path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle>  </svg>  </button> <!-- 布局切换按钮 --> <button onclick="toggleLayoutWidth()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 cursor-pointer !hidden lg:!block">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gallery-horizontal"> <path d="M2 3v18"></path><rect width="12" height="18" x="6" y="3" rx="2"></rect><path d="M22 3v18"></path>  </svg>  </button> <!-- 主题切换按钮 --> <button onclick="toggleTheme()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-2 cursor-pointer">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun dark:hidden"> <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>  </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon hidden dark:block"> <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>  </svg>  </button> <!-- 移动端菜单按钮 --> <button id="menuToggle" onclick="openRightMenuDrawer()" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-8 rounded-md px-2 cursor-pointer lg:hidden">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"> <path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path>  </svg>  </button> </div> <!-- 搜索模态框 --> <div id="search-modal" class="fixed inset-0 z-50 flex items-start justify-center pt-[17vh] transition-opacity duration-300" data-open="false"> <div class="relative w-[90%] md:w-[75%] max-w-[850px] mx-auto bg-white dark:bg-slate-950 rounded-lg shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-200 scale-95 opacity-0 max-h-[65vh] md:max-h-[70vh] max-h-[750px]" data-modal-content> <div id="modal-search" class="pagefind-ui-modal pagefind-init" data-pagefind-ui data-bundle-path="/coding-one-more-time/pagefind/" data-ui-options="{&#34;showImages&#34;:false}"></div> <script type="module" src="/coding-one-more-time/_astro/Search.astro_astro_type_script_index_0_lang.XJI6UTiE.js"></script> </div> </div> <script>
+  // 搜索模态框控制
+  window.searchModalController = {
+    open: function () {
+      const modal = document.getElementById("search-modal");
+      if (modal) {
+        modal.setAttribute("data-open", "true");
+
+        // 聚焦到搜索输入框
+        setTimeout(() => {
+          const searchInput = modal.querySelector('input[type="search"]');
+          if (searchInput) {
+            searchInput.focus();
+          }
+        }, 150);
+      }
+    },
+    isOpen: function () {
+      const modal = document.getElementById("search-modal");
+      return modal && modal.getAttribute("data-open") === "true";
+    },
+    close: function () {
+      const modal = document.getElementById("search-modal");
+      if (modal) {
+        modal.setAttribute("data-open", "false");
+
+        // 可选：在动画完成后重置焦点
+        setTimeout(() => {
+          const searchButton = document.querySelector(
+            '[onclick="openSearchModal()"]'
+          );
+          if (searchButton) {
+            searchButton.focus();
+          }
+        }, 200);
+      }
+    },
+  };
+
+  // 关闭搜索模态框
+  window.closeSearchModal = function () {
+    window.searchModalController.close();
+  };
+
+  // ESC键关闭模态框
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      const modal = document.getElementById("search-modal");
+      if (modal && modal.getAttribute("data-open") === "true") {
+        window.searchModalController.close();
+      }
+    }
+  });
+
+  // 点击背景关闭模态框
+  document.addEventListener("click", function (event) {
+    const modal = document.getElementById("search-modal");
+    if (
+      modal &&
+      event.target === modal &&
+      modal.getAttribute("data-open") === "true"
+    ) {
+      window.searchModalController.close();
+    }
+  });
+
+  // 动态检测搜索结果抽屉是否需要滚动条
+  function updateDrawerScrollbar() {
+    const drawer = document.querySelector(
+      ".pagefind-ui-modal .pagefind-ui__drawer"
+    );
+    if (drawer) {
+      const needsScrollbar = drawer.scrollHeight > drawer.clientHeight;
+      if (needsScrollbar) {
+        drawer.classList.add("has-scrollbar");
+      } else {
+        drawer.classList.remove("has-scrollbar");
+      }
+    }
+  }
+
+  // 处理mark标签中的空格
+  function processMarkTags() {
+    const marks = document.querySelectorAll(
+      ".pagefind-ui-modal .pagefind-ui__result-excerpt mark"
+    );
+    marks.forEach((mark) => {
+      // 获取原始文本并去除前后空格
+      const originalText = mark.textContent || "";
+      const trimmedText = originalText.trim();
+
+      // 如果文本有变化，更新内容
+      if (originalText !== trimmedText) {
+        mark.textContent = trimmedText;
+      }
+
+      // 同时处理内部的多个连续空格
+      const normalizedText = trimmedText.replace(/\s+/g, " ");
+      if (trimmedText !== normalizedText) {
+        mark.textContent = normalizedText;
+      }
+    });
+  }
+
+  // 监听搜索结果变化
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === "childList") {
+        updateDrawerScrollbar();
+        // 处理mark标签中的空格
+        processMarkTags();
+      }
+    });
+  });
+
+  // 修改搜索输入框的placeholder文本
+  function updateSearchPlaceholder() {
+    const searchInput = document.querySelector(
+      ".pagefind-ui-modal .pagefind-ui__search-input"
+    );
+    if (searchInput) {
+      searchInput.placeholder = "搜索文章、小册、随笔..."; // 自定义placeholder文本
+    }
+  }
+
+  // 当搜索模态框打开时开始监听
+  const originalOpen = window.searchModalController.open;
+  window.searchModalController.open = function () {
+    originalOpen();
+
+    // 立即更新搜索输入框placeholder
+    updateSearchPlaceholder();
+
+    setTimeout(function () {
+      const drawer = document.querySelector(
+        ".pagefind-ui-modal .pagefind-ui__drawer"
+      );
+      if (drawer) {
+        updateDrawerScrollbar();
+        // 初始处理mark标签
+        processMarkTags();
+        observer.observe(drawer, { childList: true, subtree: true });
+      }
+    }, 300);
+  };
+
+  // 当搜索模态框关闭时停止监听
+  const originalClose = window.searchModalController.close;
+  window.searchModalController.close = function () {
+    observer.disconnect();
+    originalClose();
+  };
+
+  // 监听搜索输入，实时处理mark标签
+  document.addEventListener("input", function (event) {
+    if (event.target.matches('.pagefind-ui-modal input[type="search"]')) {
+      // 延迟处理，等待搜索结果更新
+      setTimeout(processMarkTags, 100);
+    }
+  });
+</script>  </header> <!-- 主题初始化与切换 --> <script>
+  // 主题初始化 - 最先执行避免闪烁
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  })();
+
+  // 切换主题
+  function toggleTheme() {
+    if (typeof window === "undefined") return;
+
+    const isDark = document.documentElement.classList.contains("dark");
+
+    if (isDark) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  }
+</script> <!-- 布局宽度管理 --> <script>
+  // 布局宽度管理 - 初始化与切换（防闪烁优化）
+  (function () {
+    const LAYOUT_KEY = "layoutWidth";
+    const WIDE_CLASS = "w-full";
+    const NARROW_CLASS = "container";
+
+    // 预初始化：在DOM解析阶段应用保存的设置
+    function preInitLayoutWidth() {
+      const saved = localStorage.getItem(LAYOUT_KEY);
+      if (saved === "wide") {
+        // 使用CSSOM直接操作，避免重绘
+        const style = document.createElement("style");
+        style.textContent =
+          ".layout { width: 100% !important; max-width: none !important; }";
+        style.id = "layout-preinit";
+        document.head.appendChild(style);
+      }
+    }
+
+    // 应用布局宽度到所有元素
+    function applyLayoutWidth(isWide) {
+      // 移除预初始化样式
+      const preinitStyle = document.getElementById("layout-preinit");
+      if (preinitStyle) preinitStyle.remove();
+
+      document.querySelectorAll(".layout").forEach((el) => {
+        el.classList.toggle(WIDE_CLASS, isWide);
+        el.classList.toggle(NARROW_CLASS, !isWide);
+      });
+    }
+
+    // 初始化布局宽度
+    function initLayoutWidth() {
+      const saved = localStorage.getItem(LAYOUT_KEY);
+      if (saved === "wide") applyLayoutWidth(true);
+    }
+
+    // 切换布局宽度
+    window.toggleLayoutWidth = function () {
+      const current = localStorage.getItem(LAYOUT_KEY) === "wide";
+      const next = !current;
+
+      applyLayoutWidth(next);
+      localStorage.setItem(LAYOUT_KEY, next ? "wide" : "narrow");
+
+      // 验证修正（防抖）
+      clearTimeout(window._layoutVerifyTimer);
+      window._layoutVerifyTimer = setTimeout(() => {
+        const shouldBeWide = localStorage.getItem(LAYOUT_KEY) === "wide";
+        document.querySelectorAll(".layout").forEach((el) => {
+          const isWide = el.classList.contains(WIDE_CLASS);
+          if (shouldBeWide !== isWide) {
+            el.classList.toggle(WIDE_CLASS, shouldBeWide);
+            el.classList.toggle(NARROW_CLASS, !shouldBeWide);
+          }
+        });
+      }, 50);
+    };
+
+    // 预初始化（在DOM解析阶段执行）
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", preInitLayoutWidth);
+    } else {
+      preInitLayoutWidth();
+    }
+
+    // 完整初始化（DOM就绪后）
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initLayoutWidth);
+    } else {
+      requestAnimationFrame(initLayoutWidth);
+    }
+  })();
+</script> <!-- 菜单和搜索控制 --> <script>
+  // 打开右侧菜单抽屉
+  function openRightMenuDrawer() {
+    if (typeof window === "undefined") return;
+
+    if (
+      window.rightMenuDrawerController &&
+      typeof window.rightMenuDrawerController.open === "function"
+    ) {
+      window.rightMenuDrawerController.open();
+    }
+  }
+
+  // 打开搜索模态框
+  function openSearchModal() {
+    if (typeof window === "undefined") return;
+
+    if (
+      window.searchModalController &&
+      typeof window.searchModalController.open === "function"
+    ) {
+      window.searchModalController.open();
+    }
+  }
+</script> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full" aria-hidden="true"></div> <!-- 内容区域 - 可滚动 --> <main id="content-container" class="flex-1 overflow-y-auto flex flex-col transition-all duration-300 ease-in-out"> <!-- 内容包装器 --> <div class="container mx-auto p-4 w-full content layout flex-1 px-4 lg:px-6 py-6 lg:py-8 flex flex-col gap-y-4 lg:gap-y-6 w-full">  <nav class="flex items-center" aria-label="Breadcrumb"> <ol class="flex items-center"> <li class="flex items-center">  <a href="https://yumih1129.github.io/coding-one-more-time" class="inline-flex items-center gap-1 transition-colors duration-200 text-sm text-muted-foreground hover:text-foreground cursor-pointer max-w-full truncate" title> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"> <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>  </svg>  </a> </li><li class="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right text-muted-foreground mx-2"> <path d="m9 18 6-6-6-6"></path>  </svg> <a href="https://yumih1129.github.io/coding-one-more-time/notes" class="inline-flex items-center gap-1 transition-colors duration-200 text-sm text-muted-foreground hover:text-foreground cursor-pointer max-w-full truncate" title="随笔"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-text"> <path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M9.5 8h5"></path><path d="M9.5 12H16"></path><path d="M9.5 16H14"></path>  </svg> <span class="">随笔</span> </a> </li><li class="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right text-muted-foreground mx-2"> <path d="m9 18 6-6-6-6"></path>  </svg> <span class="inline-flex items-center gap-1 transition-colors duration-200 text-sm text-foreground font-medium cursor-default" aria-current="page" title="Java 30周年：Duke与你同行🎉"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"> <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>  </svg> <span class="line-clamp-1">Java 30周年：Duke与你同行🎉</span> </span> </li> </ol> </nav> <div class="flex flex-col gap-y-4 lg:gap-y-6"> <!-- 随笔头部信息区域 --> <header class="note-header flex flex-col lg:flex-row justify-between gap-4"> <!-- 随笔封面图片 --> <div class="lg:w-[35%] xl:w-[26%] w-full xl:max-w-[400px] max-w-full h-54 border-4 border-transparent rounded-lg overflow-hidden order-first lg:order-last flex-shrink-0 relative group"> <img src="/coding-one-more-time/cover/java-30th-anniversary.webp" alt="Java 30周年：Duke与你同行🎉" class="w-full h-full rounded-lg shadow-md object-cover select-none pointer-events-none">   </div> <!-- 随笔标题和元信息 --> <div class="note-header-left flex flex-col flex-1 justify-between gap-y-4 py-1 min-w-0"> <h1 class="text-2xl md:text-3xl font-bold text-foreground leading-tight truncate" title="Java 30周年：Duke与你同行🎉"> Java 30周年：Duke与你同行🎉 </h1> <p class="text-muted-foreground leading-relaxed line-clamp-2 h-12" title="Java在2025年5月23日，迎来了30周年纪念。JetBrains推出Java 30 Anniversary插件，开发者每次启动开发工具时，都会看到Java的吉祥物Duke出现在启动画面。"> Java在2025年5月23日，迎来了30周年纪念。JetBrains推出Java 30 Anniversary插件，开发者每次启动开发工具时，都会看到Java的吉祥物Duke出现在启动画面。 </p> <!-- 分类和标签 --> <div class="flex flex-wrap lg:flex-nowrap lg:overflow-hidden items-center gap-3"> <span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-sm font-medium transition-colors duration-200 bg-primary text-primary-foreground hover:bg-primary/90 group rounded-sm flex-shrink-0"> <span class="inline-flex gap-x-1 items-center h-5 leading-5 cursor-default"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers"> <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>  </svg> <span class="truncate">技术文化</span> </span> </span> <div class="flex flex-wrap gap-2"> <span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-sm font-medium transition-colors duration-200 bg-secondary text-secondary-foreground hover:bg-secondary/80 group rounded-xl !bg-red-700 !text-white"> <span class="inline-flex gap-x-1 items-center h-5 leading-5 cursor-default"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag"> <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>  </svg> <span class="truncate">Java</span> </span> </span><span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-sm font-medium transition-colors duration-200 bg-secondary text-secondary-foreground hover:bg-secondary/80 group rounded-xl"> <span class="inline-flex gap-x-1 items-center h-5 leading-5 cursor-default"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag"> <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>  </svg> <span class="truncate">Duke</span> </span> </span><span class="inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-sm font-medium transition-colors duration-200 bg-secondary text-secondary-foreground hover:bg-secondary/80 group rounded-xl"> <span class="inline-flex gap-x-1 items-center h-5 leading-5 cursor-default"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag"> <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>  </svg> <span class="truncate">开发者社区</span> </span> </span> </div> </div> <!-- 作者和统计信息 --> <div class="flex flex-wrap lg:flex-nowrap lg:overflow-hidden items-center gap-3"> <div class="flex items-center gap-1 flex-shrink-0 cursor-default" title="7分技术，3分管理，2分运气"> <span class="inline-flex items-center justify-center rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800 ring-0.5 ring-slate-200 dark:ring-slate-700 shadow-xs h-6 w-6 text-xs transition-all duration-300 ease-in-out"> <img src="/coding-one-more-time/avatar.jpg" alt="Y" loading="lazy" class="h-full w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'; this.nextElementSibling.style.opacity='1';"> <span class="font-medium text-slate-700 dark:text-slate-200 hidden opacity-0" title="Y"> Y </span> </span> <div> <span class="text-sm font-medium text-foreground truncate"> Yumih </span> </div> </div> <div class="flex items-center gap-1 text-muted-foreground"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"> <path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path>  </svg> <span class="text-sm">2025年05月23日</span> </div> <div class="flex items-center gap-1 text-muted-foreground"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw"> <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path>  </svg> <span class="text-sm">更新于2025年05月24日</span> </div> <div class="flex items-center gap-1 text-muted-foreground"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"> <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>  </svg> <span class="text-sm">2162字</span> </div> <div class="flex items-center gap-1 text-muted-foreground"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"> <path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle>  </svg> <span class="text-sm">约11分钟</span> </div> </div> </div> </header> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full" aria-hidden="true"></div> <!-- 主内容区域和侧边栏 --> <div class="lg:flex lg:gap-8 w-full"> <main class="flex-1 min-w-0">  <article class="article max-w-full xl:max-w-none prose prose-neutral dark:prose-invert prose-sm lg:prose-base"> <p>Java在2025年5月23日（昨日）迎来了30周年纪念。为了庆祝这一重要时刻，JetBrains推出了一款名为“<strong>Java 30 Anniversary</strong>”的插件。安装该插件后，开发者每次启动开发工具时，都会看到Java的吉祥物Duke出现在启动画面上，仿佛Java在默默支持着每一位开发者。</p>
+<p>通过完成一个简单的测试，开发者可以解锁Duke的代码，享受这一独特的体验。相关设置可以在“<strong>设置 > 外观与行为 > Java 30 Anniversary Splash Screen</strong>”中找到。这个小小的举动不仅为开发过程增添了乐趣，也体现了Java社区对开发者的关怀和对Java历史的尊重。</p>
+<p>接下来，将分享一系列Java 30 Anniversary Splash Screen的内容，包括对应的角色代码、图标和描述。</p>
+<h2 id="01-shortcut-sorcerer快捷键魔法师">01. Shortcut sorcerer(快捷键魔法师)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You haven’t touched a mouse in years. You summon code with keystrokes and pure willpower.</p>
+<blockquote>
+<p>你已经多年没碰过鼠标了，你仅靠键盘按键和纯粹的意志力就能调用代码。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>2b40ec50ce31589592a9295a860409aa</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524112916.-FRvOLbc_1pAg5U.webp" ></p>
+<h2 id="02-romote-controlled-dev远程控制开发者">02. Romote-controlled dev（远程控制开发者）</h2>
+<p><strong>Describe</strong>：</p>
+<p>You deploy from a hammock, respond from three time zones, and haven’t worn real pants since 2020.</p>
+<blockquote>
+<p>你躺在吊床上部署代码，跨越三个时区响应问题，自2020年以来就没再穿过正装裤。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>bc17df702c2c65ab9eea00c668f590c1</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524113031.hb_4UVi7_nxQbg.webp" ></p>
+<h2 id="03-git-philosophergit-哲学家">03. Git philosopher（Git 哲学家）</h2>
+<p><strong>Describe</strong>：</p>
+<p>You commit with intention and merge with grace. For you, every branch is a journey, and every rebase a meditation.</p>
+<blockquote>
+<p>你带着明确的意图提交代码，优雅地合并分支。对你来说，每一个分支都是一场旅程，每一次变基都是一次冥想。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>8d5859ddaf5134cc5ae4d4098ac2cd6e</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524113653.CvFlnFs6_1B4rX7.webp" ></p>
+<h2 id="04-syntax-nomad语法游牧者">04. Syntax nomad（语法游牧者）</h2>
+<p><strong>Describe</strong>：</p>
+<p>You don’t chase goals – you follow the flow. Lost routes, surprise errors? That’s all just part of the adventure.</p>
+<blockquote>
+<p>你不追逐目标，而是顺应流程。迷失的路径、意外的错误？这些全都是冒险的一部分。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>4ec8f48d0fd6b011e4a0bbc801cd41c3</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524113946.CeU8jEx1_XIfM3.webp" ></p>
+<h2 id="05-container-whisperer容器低语者">05. Container whisperer(容器低语者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You deploy across clouds like it’s second nature. Docker listens, Kubernetes obeys, and somehow it all just works.</p>
+<blockquote>
+<p>你在云端部署应用就像呼吸一样自然。Docker会听从你的指令，Kubernetes会服从你的安排，不知何故，一切都能顺利运行。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>2d0e55ecd2adb48a19d1a579037813a0</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524115222.DoyXHuem_ZtjW20.webp" ></p>
+<h2 id="06-warlordwar大领主">06. WARlord(WAR大领主)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You deploy apps that come in megabytes and leave behind smoke. If the server survives, it’s a win.</p>
+<blockquote>
+<p>你部署的应用程序动辄以兆字节计，运行时如同战场般硝烟弥漫。如果服务器能够幸存，那就算胜利了。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>a25c68853e9c2edc7c3a3508b325b5af</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1156" src="/coding-one-more-time/_astro/image-20250524115443.6d9eZ8gV_Z2ay9Eg.webp" ></p>
+<h2 id="07-duke-nukemjava公爵大冒险java">07. Duke Nukem.java(公爵大冒险.java)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You code like an action movie: fast, bold, and with a big splash screen. Every feature is an entrance.</p>
+<blockquote>
+<p>你写代码就像拍动作片：快速、大胆，还带着一个超炫的启动画面。每个功能都像是一个惊艳的登场。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>fda9b7d363f53597b647322572c616ba</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524115642.BphRBjm0_Z2tNKHp.webp" ></p>
+<h2 id="08-ide-skepticide怀疑论者">08. IDE skeptic(IDE怀疑论者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You trust your terminal more than any UI. If it needs a mouse, it probably needs a rethink.</p>
+<blockquote>
+<p>你更信任终端，而不是任何图形界面。如果需要鼠标，那它可能需要重新思考。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>3ad7a84642024a8e1ea14be3ce70bd78</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1156" src="/coding-one-more-time/_astro/image-20250524115857.DFEeuP6Y_1JS9aI.webp" ></p>
+<h2 id="09-meme-driven-dev梗驱动开发者">09. Meme-driven dev(梗驱动开发者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You speak fluent meme. That’s how you explain bugs and survive reviews. No meme? Then, it didn’t happen.</p>
+<blockquote>
+<p>你精通各种梗。你用梗来解释漏洞，用梗来应对代码审查。没有梗？那这事就没发生过。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>0b435eb9bfc2464bd9ef61bb8d5d8846</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524120302.DOr7dA-n_2iKRbs.webp" ></p>
+<h2 id="10-director-of-agents代理总监">10. Director of agents(代理总监)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You don’t code, you command. The agents do your bidding, and you take the credit.</p>
+<blockquote>
+<p>你不是在写代码，而是在发号施令。代理们听从你的指令，而你则收获所有的赞誉。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>60d5d194ecf1215296d3cdcf719ca89d</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524120523.CsEUTzq3_13Df4P.webp" ></p>
+<h2 id="11-microservice-guru微服务大师">11. Microservice guru(微服务大师)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You see systems as stories – split, scalable, and speaking over HTTP. You don’t build apps. You shape universes.</p>
+<blockquote>
+<p>你将系统视为故事——它们被拆分、可扩展，并通过HTTP进行通信。你不是在构建应用程序，而是在塑造一个个宇宙。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>f69c946282538cbac54b9539c216def9</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524120722.CnJp7Y4a_1zgtbC.webp" ></p>
+<h2 id="12-ide-loyalistide-忠诚者">12. IDE loyalist(IDE 忠诚者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You picked your IDE once, and now it’s basically a lifestyle. When it crashes, you crash with it.</p>
+<blockquote>
+<p>你选择了一款 IDE，现在它几乎成了你的一种生活方式。当它崩溃时，你也会跟着崩溃。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>3a2ce589d224acb366b5116f84e86ca6</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1056" height="1158" src="/coding-one-more-time/_astro/image-20250524121028.CQSO4flp_Z8KGhj.webp" ></p>
+<h2 id="13-framework-collector框架收藏家">13. Framework collector(框架收藏家)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You’ve seen every framework, tried most, and remember them all. Your toolbox is a museum, and you’re the curator.</p>
+<blockquote>
+<p>你见识过每一个框架，尝试过大多数，并且对它们都记忆犹新。你的工具箱就像一座博物馆，而你是馆长。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>69225e22e6ded2f60f1065db941a0f6e</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524121222.DmJK3Wiv_XTr6W.webp" ></p>
+<h2 id="14-lambda-ambassadorlambda-大使">14. Lambda ambassador(Lambda 大使)</h2>
+<p><strong>Describe</strong>：</p>
+<p>-> is your signature. One-liners, your style. Clean, sharp, and just cryptic enough to make them wonder.</p>
+<blockquote>
+<p><code>-></code> 是你的标志。一行代码就是你的风格。简洁、锐利，且足够神秘，让人忍不住去琢磨。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>19672ab97b05acc9743cbbf560afaf18</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524121448.D4ujtzBB_T1QAr.webp" ></p>
+<h2 id="15-zoom-shadowzoom-影子">15. Zoom shadow(Zoom 影子)</h2>
+<p><strong>Describe</strong>：</p>
+<p>Since the pandemic, you’ve turned your camera on. Your teammates’ background talks is your productivity soundtrack.</p>
+<blockquote>
+<p>自从疫情开始，你一直开着摄像头。队友们背景中的交谈声就是你高效工作的背景音乐。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>110eefd412c6be4d2864894af8f3f0cb</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524121708.BZOypZLs_1VY28O.webp" ></p>
+<h2 id="16-friday-deployer周五部署者">16. Friday deployer(周五部署者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You ship on Fridays because you like to feel alive. It’s brave. It’s chaotic. It’s very you.</p>
+<blockquote>
+<p>你在周五进行部署，因为你喜欢那种充满活力的感觉。这是勇敢的，这是混乱的，这很像你。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>f76af4e3cd9b3832ee30c7919e99ae17</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524121928.CwqeuIWg_2kqr6A.webp" ></p>
+<h2 id="17-web-chaos-duke网页混乱公爵">17. Web chaos Duke(网页混乱公爵)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You built a homepage with four fonts, two applets, and one soul. No regrets, just GIFs.</p>
+<blockquote>
+<p>你用四种字体、两个小程序和一颗灵魂搭建了一个主页。没有遗憾，只有GIF图。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>f62cd724d63ad6f54151403bd73e874c</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524122159.BpMXlRbM_Z2p1SFx.webp" ></p>
+<h2 id="18-stack-overflow-prophetstack-overflow先知">18. Stack Overflow prophet(Stack Overflow先知)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You don’t debug, you find answers. Always in a 12-year-old thread with one upvote and “This saved my life” comment.</p>
+<blockquote>
+<p>你不是在调试，而是在寻找答案。总是在一个有12年历史的帖子中，只有一个点赞和“这救了我的命”的评论。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>e5c81f16e574e1f9c5f68f15b9d314f4</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524122434.BnysfDDv_1U3vsF.webp" ></p>
+<h2 id="19-the-applet-evangelist小程序传道者">19. The applet evangelist(小程序传道者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You put Java in the browser and called it innovation. It blinked, and it crashed, but you believed.</p>
+<blockquote>
+<p>你把Java放到了浏览器里，并称之为创新。它闪烁，它崩溃，但你坚信不疑。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>83828e5cd7f44ca1a53c7197382ea224</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524122633.CWHLdMvF_1drV9L.webp" ></p>
+<h2 id="20-dark-theme-duke暗黑主题公爵">20. Dark theme Duke(暗黑主题公爵)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You code in the dark and you like it that way. Light mode is for quitters.</p>
+<blockquote>
+<p>你在黑暗中编码，并且喜欢这种方式。浅色模式是给那些半途而废的人准备的。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>b1ececb71ab88dfd65cf40966d8eb135</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524122848.CDX4fI4B_KqnsA.webp" ></p>
+<h2 id="21-javafluencerjava影响者">21. Javafluencer(Java影响者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You ship clean code and content. One hand on the keyboard, the other posting a tutorial that’s already going viral.</p>
+<blockquote>
+<p>你提供干净的代码和优质内容。一只手在键盘上飞舞，另一只手则在发布一个即将爆火的教程。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>ad383f39cbf1d69607223f66c07bdd1e</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524123445.Dp9roTi2_Z1QcdkE.webp" ></p>
+<h2 id="22-debugger-in-baggy-jeans穿宽松牛仔裤的调试大师">22. Debugger in baggy jeans(穿宽松牛仔裤的调试大师)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You squash bugs in oversized hoodies with style. The stack trace fears you.</p>
+<blockquote>
+<p>你穿着宽松的连帽衫，以酷炫的风格消灭漏洞。堆栈跟踪都怕你。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>7cddee11a6a1af5477479c1aaad86f66</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524123655.DWHNHJLD_1MCCh5.webp" ></p>
+<h2 id="23-ai-powered-devai驱动的开发者">23. AI-powered dev(AI驱动的开发者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You no longer write code — you accept it. AI Assistant is your colleague, your editor, and maybe your therapist.</p>
+<blockquote>
+<p>你不再编写代码——你接受它。AI助手是你的同事、你的编辑，甚至可能是你的心理医生。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>935953a74313da7ec95c6dbfadfaca02</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524123903.G6-p99re_2nflxN.webp" ></p>
+<h2 id="24-lord-of-agents代理领主">24. Lord of agents(代理领主)</h2>
+<p><strong>Describe</strong>：</p>
+<p>Agents don’t help you; they work for you. They debug and refactor while you pull the strings.</p>
+<blockquote>
+<p>代理不是来帮助你的，而是为你工作的。它们负责调试和重构代码，而你则是幕后操纵的那个人。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>9116a07e790bd5af3f7f8a2bff210657</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524124227.Dwvyjai3_TFv79.webp" ></p>
+<h2 id="25-shiftshift-dukeshiftshift公爵">25. Shift+Shift Duke(Shift+Shift公爵)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You summon IntelliJ IDEA search like it’s a superpower. If it’s not searchable, it doesn’t exist.</p>
+<blockquote>
+<p>你像使用超能力一样召唤IntelliJ IDEA的搜索功能。如果它不可搜索，那它就不存在。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>87c1125501ead2504419b534ffe1d00d</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524124616.N8GlGY7S_Z12gGpl.webp" ></p>
+<h2 id="26-optional-oracleoptional神谕者">26. Optional oracle(Optional神谕者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You wrapped your whole codebase in Optional and called it peace of mind. Null can’t hurt you anymore.</p>
+<blockquote>
+<p>你将整个代码库都封装在<code>Optional</code>里，并称之为安心。空值（<code>null</code>）再也伤不到你了。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>1d8b5b90ef272c283a93a1f94fd16dd1</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524124827._bqqB1Sj_y5Ql3.webp" ></p>
+<h2 id="27-conference-king会议之王">27. Conference king(会议之王)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You attend talks, hoard stickers, and network like it’s a side quest. You came for the swag. You stayed for the swag.</p>
+<blockquote>
+<p>你参加讲座，收集贴纸，像完成一个支线任务一样拓展人脉。你是为了周边产品而来，也为了周边产品而留下。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>882c4006ef2fef660df2cc9d33c08198</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524125118.D0McjWq6_2aLpGM.webp" ></p>
+<h2 id="28-the-javazillajava巨兽">28. The JavaZilla(Java巨兽)</h2>
+<p><strong>Describe</strong>：</p>
+<p>Once you wrote an app that devoured a team. No one understands it, but it still runs – somehow.</p>
+<blockquote>
+<p>曾经，你写了一个吞噬整个团队的应用程序。没人能理解它，但它仍然在运行——不知何故。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>6c0e8437227d1951391aeaa240f11cdd</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524125440.CsRvUjG9_z09bg.webp" ></p>
+<h2 id="29-stack-trace-therapist堆栈跟踪治疗师">29. Stack trace therapist(堆栈跟踪治疗师)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You read errors like poetry and fix bugs with empathy. Your debugger is basically a confessional booth.</p>
+<blockquote>
+<p>你像读诗一样阅读错误信息，并带着同理心修复漏洞。你的调试器简直就是一间忏悔室。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>ed28f2945037a6d7a5985cc3d766bfeb</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524130842.Cbv4NGLc_237K38.webp" ></p>
+<h2 id="30-prompt-perfectionist提示词完美主义者">30. Prompt perfectionist(提示词完美主义者)</h2>
+<p><strong>Describe</strong>：</p>
+<p>You rewrite prompts like they’re haikus. When the AI finally gets it right, it feels like love.</p>
+<blockquote>
+<p>你像写俳句一样精心改写提示词。当AI终于理解正确时，那种感觉就像恋爱一样。</p>
+</blockquote>
+<p><strong>Character Code</strong>：</p>
+<p>Your Duke character code：<code>5a0932b1ea26a39e72380fd7f4fd60c9</code>。</p>
+<p><strong>Rendering</strong>：</p>
+<p><img  loading="lazy" decoding="async" fetchpriority="auto" width="1058" height="1158" src="/coding-one-more-time/_astro/image-20250524131254.BYPV2Y6u_1cMitt.webp" ></p> </article> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full my-4 lg:my-6" aria-hidden="true"></div>
+        <div class="giscus giscus-animate" data-astro-cid-svawpu5v> <!-- Loading spinner will be added via CSS when loading class is present --> </div> <script>(function(){const repo = "yumih1129/coding-one-more-time-giscus";
+const repoId = "R_kgDOQGzf7A";
+const category = "Announcements";
+const categoryId = "DIC_kwDOQGzf7M4Cw6vy";
+const mapping = "pathname";
+const theme = "preferred_color_scheme";
+const lang = "zh-CN";
+const loading = "eager";
+const inputPosition = "top";
+const reactionsEnabled = "1";
+const emitMetadata = "0";
+const strict = "0";
+
+  function loadGiscus() {
+    const giscusContainer = document.querySelector(".giscus");
+    if (!giscusContainer || giscusContainer.querySelector("script")) return;
+
+    // Add loading state for better UX
+    giscusContainer.classList.add("loading");
+
+    const currentTheme = document.documentElement.classList.contains("dark")
+      ? "dark"
+      : "light";
+    const effectiveTheme =
+      theme === "preferred_color_scheme" ? currentTheme : theme;
+
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.setAttribute("data-repo", repo);
+    script.setAttribute("data-repo-id", repoId);
+    script.setAttribute("data-category", category);
+    script.setAttribute("data-category-id", categoryId);
+    script.setAttribute("data-mapping", mapping);
+    script.setAttribute("data-theme", effectiveTheme);
+    script.setAttribute("data-lang", lang);
+    script.setAttribute("data-loading", loading);
+    script.setAttribute("data-input-position", inputPosition);
+    script.setAttribute("data-reactions-enabled", reactionsEnabled);
+    script.setAttribute("data-emit-metadata", emitMetadata);
+    script.setAttribute("data-strict", strict);
+    script.setAttribute("crossorigin", "anonymous");
+    script.async = true;
+
+    // Remove loading state when script loads
+    script.onload = () => {
+      giscusContainer.classList.remove("loading");
+    };
+
+    giscusContainer.appendChild(script);
+  }
+
+  // Load immediately when DOM is ready, prioritize faster loading
+  function initGiscus() {
+    // Use requestIdleCallback to load during browser idle time
+    if (window.requestIdleCallback) {
+      requestIdleCallback(() => loadGiscus(), { timeout: 1000 });
+    } else {
+      // Fallback for browsers without requestIdleCallback
+      setTimeout(() => loadGiscus(), 0);
+    }
+  }
+
+  // Load as soon as possible based on document ready state
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGiscus);
+  } else if (document.readyState === "interactive") {
+    // DOM is ready but resources may still be loading
+    initGiscus();
+  } else {
+    // DOM and resources are loaded
+    initGiscus();
+  }
+
+  // Handle theme changes with smooth transition
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === "class") {
+        const giscusFrame = document.querySelector(".giscus-frame");
+        const giscusContainer = document.querySelector(".giscus");
+
+        if (giscusFrame && giscusContainer) {
+          // Add loading state for smooth transition
+          giscusContainer.classList.add("theme-switching");
+
+          // Fade out animation
+          giscusFrame.style.transition = "opacity 0.2s ease-in-out";
+          giscusFrame.style.opacity = "0.5";
+
+          // Send theme change message to giscus iframe
+          const theme = document.documentElement.classList.contains("dark")
+            ? "dark"
+            : "light";
+          const effectiveTheme =
+            theme === "preferred_color_scheme" ? theme : theme;
+          const iframe = document.querySelector("iframe.giscus-frame");
+          if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage(
+              { giscus: { setConfig: { theme: effectiveTheme } } },
+              "https://giscus.app"
+            );
+          }
+
+          // Restore opacity and remove loading state after theme change
+          setTimeout(() => {
+            giscusFrame.style.opacity = "1";
+            giscusContainer.classList.remove("theme-switching");
+          }, 300);
+        }
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, { attributes: true });
+})();</script>  </main> <!-- 右侧边栏 --> <aside class="w-72 hidden xl:block flex-shrink-0 max-w-72"> <div class="sticky top-6 space-y-6 w-full"> <!-- 目录组件 --> <div class="group relative bg-card text-card-foreground backdrop-blur-sm rounded-xl border border-border/50 overflow-hidden transition-colors duration-300 flex flex-col w-full"> <h3 class="text-base font-semibold text-foreground flex items-center justify-between gap-2 px-4 pt-4 w-full transition-colors duration-300"> <div class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list text-primary transition-colors duration-300"> <path d="M3 5h.01"></path><path d="M3 12h.01"></path><path d="M3 19h.01"></path><path d="M8 5h13"></path><path d="M8 12h13"></path><path d="M8 19h13"></path>  </svg>
+目录
+</div> <span id="reading-progress" class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary/80 transition-all duration-300 leading-5">
+0%
+</span> </h3> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full my-3 w-full" aria-hidden="true"></div> <nav id="table-of-contents" class="space-y-1 overflow-y-auto px-2 mx-2 mr-1 mb-4 max-h-112 h-112"> <ul class="space-y-1 text-sm w-full"> <li> <a href="#01-shortcut-sorcerer快捷键魔法师" data-heading-id="01-shortcut-sorcerer快捷键魔法师" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 01. Shortcut sorcerer(快捷键魔法师) </a> </li><li> <a href="#02-romote-controlled-dev远程控制开发者" data-heading-id="02-romote-controlled-dev远程控制开发者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 02. Romote-controlled dev（远程控制开发者） </a> </li><li> <a href="#03-git-philosophergit-哲学家" data-heading-id="03-git-philosophergit-哲学家" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 03. Git philosopher（Git 哲学家） </a> </li><li> <a href="#04-syntax-nomad语法游牧者" data-heading-id="04-syntax-nomad语法游牧者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 04. Syntax nomad（语法游牧者） </a> </li><li> <a href="#05-container-whisperer容器低语者" data-heading-id="05-container-whisperer容器低语者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 05. Container whisperer(容器低语者) </a> </li><li> <a href="#06-warlordwar大领主" data-heading-id="06-warlordwar大领主" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 06. WARlord(WAR大领主) </a> </li><li> <a href="#07-duke-nukemjava公爵大冒险java" data-heading-id="07-duke-nukemjava公爵大冒险java" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 07. Duke Nukem.java(公爵大冒险.java) </a> </li><li> <a href="#08-ide-skepticide怀疑论者" data-heading-id="08-ide-skepticide怀疑论者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 08. IDE skeptic(IDE怀疑论者) </a> </li><li> <a href="#09-meme-driven-dev梗驱动开发者" data-heading-id="09-meme-driven-dev梗驱动开发者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 09. Meme-driven dev(梗驱动开发者) </a> </li><li> <a href="#10-director-of-agents代理总监" data-heading-id="10-director-of-agents代理总监" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 10. Director of agents(代理总监) </a> </li><li> <a href="#11-microservice-guru微服务大师" data-heading-id="11-microservice-guru微服务大师" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 11. Microservice guru(微服务大师) </a> </li><li> <a href="#12-ide-loyalistide-忠诚者" data-heading-id="12-ide-loyalistide-忠诚者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 12. IDE loyalist(IDE 忠诚者) </a> </li><li> <a href="#13-framework-collector框架收藏家" data-heading-id="13-framework-collector框架收藏家" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 13. Framework collector(框架收藏家) </a> </li><li> <a href="#14-lambda-ambassadorlambda-大使" data-heading-id="14-lambda-ambassadorlambda-大使" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 14. Lambda ambassador(Lambda 大使) </a> </li><li> <a href="#15-zoom-shadowzoom-影子" data-heading-id="15-zoom-shadowzoom-影子" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 15. Zoom shadow(Zoom 影子) </a> </li><li> <a href="#16-friday-deployer周五部署者" data-heading-id="16-friday-deployer周五部署者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 16. Friday deployer(周五部署者) </a> </li><li> <a href="#17-web-chaos-duke网页混乱公爵" data-heading-id="17-web-chaos-duke网页混乱公爵" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 17. Web chaos Duke(网页混乱公爵) </a> </li><li> <a href="#18-stack-overflow-prophetstack-overflow先知" data-heading-id="18-stack-overflow-prophetstack-overflow先知" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 18. Stack Overflow prophet(Stack Overflow先知) </a> </li><li> <a href="#19-the-applet-evangelist小程序传道者" data-heading-id="19-the-applet-evangelist小程序传道者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 19. The applet evangelist(小程序传道者) </a> </li><li> <a href="#20-dark-theme-duke暗黑主题公爵" data-heading-id="20-dark-theme-duke暗黑主题公爵" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 20. Dark theme Duke(暗黑主题公爵) </a> </li><li> <a href="#21-javafluencerjava影响者" data-heading-id="21-javafluencerjava影响者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 21. Javafluencer(Java影响者) </a> </li><li> <a href="#22-debugger-in-baggy-jeans穿宽松牛仔裤的调试大师" data-heading-id="22-debugger-in-baggy-jeans穿宽松牛仔裤的调试大师" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 22. Debugger in baggy jeans(穿宽松牛仔裤的调试大师) </a> </li><li> <a href="#23-ai-powered-devai驱动的开发者" data-heading-id="23-ai-powered-devai驱动的开发者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 23. AI-powered dev(AI驱动的开发者) </a> </li><li> <a href="#24-lord-of-agents代理领主" data-heading-id="24-lord-of-agents代理领主" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 24. Lord of agents(代理领主) </a> </li><li> <a href="#25-shiftshift-dukeshiftshift公爵" data-heading-id="25-shiftshift-dukeshiftshift公爵" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 25. Shift+Shift Duke(Shift+Shift公爵) </a> </li><li> <a href="#26-optional-oracleoptional神谕者" data-heading-id="26-optional-oracleoptional神谕者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 26. Optional oracle(Optional神谕者) </a> </li><li> <a href="#27-conference-king会议之王" data-heading-id="27-conference-king会议之王" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 27. Conference king(会议之王) </a> </li><li> <a href="#28-the-javazillajava巨兽" data-heading-id="28-the-javazillajava巨兽" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 28. The JavaZilla(Java巨兽) </a> </li><li> <a href="#29-stack-trace-therapist堆栈跟踪治疗师" data-heading-id="29-stack-trace-therapist堆栈跟踪治疗师" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 29. Stack trace therapist(堆栈跟踪治疗师) </a> </li><li> <a href="#30-prompt-perfectionist提示词完美主义者" data-heading-id="30-prompt-perfectionist提示词完美主义者" class="block py-1.5 px-2 rounded-md transition-all duration-200 text-sm leading-6 font-medium font-semibold text-foreground dark:text-foreground pl-2 border-transparent hover:bg-accent/60 hover:text-foreground dark:hover:bg-accent/60 dark:hover:text-foreground" style="margin-left:0rem"> 30. Prompt perfectionist(提示词完美主义者) </a> </li> </ul> </nav> </div> <!-- 推荐阅读组件 -->  </div> </aside> </div> </div> <script>(function(){const headings = [{"depth":2,"slug":"01-shortcut-sorcerer快捷键魔法师","text":"01. Shortcut sorcerer(快捷键魔法师)"},{"depth":2,"slug":"02-romote-controlled-dev远程控制开发者","text":"02. Romote-controlled dev（远程控制开发者）"},{"depth":2,"slug":"03-git-philosophergit-哲学家","text":"03. Git philosopher（Git 哲学家）"},{"depth":2,"slug":"04-syntax-nomad语法游牧者","text":"04. Syntax nomad（语法游牧者）"},{"depth":2,"slug":"05-container-whisperer容器低语者","text":"05. Container whisperer(容器低语者)"},{"depth":2,"slug":"06-warlordwar大领主","text":"06. WARlord(WAR大领主)"},{"depth":2,"slug":"07-duke-nukemjava公爵大冒险java","text":"07. Duke Nukem.java(公爵大冒险.java)"},{"depth":2,"slug":"08-ide-skepticide怀疑论者","text":"08. IDE skeptic(IDE怀疑论者)"},{"depth":2,"slug":"09-meme-driven-dev梗驱动开发者","text":"09. Meme-driven dev(梗驱动开发者)"},{"depth":2,"slug":"10-director-of-agents代理总监","text":"10. Director of agents(代理总监)"},{"depth":2,"slug":"11-microservice-guru微服务大师","text":"11. Microservice guru(微服务大师)"},{"depth":2,"slug":"12-ide-loyalistide-忠诚者","text":"12. IDE loyalist(IDE 忠诚者)"},{"depth":2,"slug":"13-framework-collector框架收藏家","text":"13. Framework collector(框架收藏家)"},{"depth":2,"slug":"14-lambda-ambassadorlambda-大使","text":"14. Lambda ambassador(Lambda 大使)"},{"depth":2,"slug":"15-zoom-shadowzoom-影子","text":"15. Zoom shadow(Zoom 影子)"},{"depth":2,"slug":"16-friday-deployer周五部署者","text":"16. Friday deployer(周五部署者)"},{"depth":2,"slug":"17-web-chaos-duke网页混乱公爵","text":"17. Web chaos Duke(网页混乱公爵)"},{"depth":2,"slug":"18-stack-overflow-prophetstack-overflow先知","text":"18. Stack Overflow prophet(Stack Overflow先知)"},{"depth":2,"slug":"19-the-applet-evangelist小程序传道者","text":"19. The applet evangelist(小程序传道者)"},{"depth":2,"slug":"20-dark-theme-duke暗黑主题公爵","text":"20. Dark theme Duke(暗黑主题公爵)"},{"depth":2,"slug":"21-javafluencerjava影响者","text":"21. Javafluencer(Java影响者)"},{"depth":2,"slug":"22-debugger-in-baggy-jeans穿宽松牛仔裤的调试大师","text":"22. Debugger in baggy jeans(穿宽松牛仔裤的调试大师)"},{"depth":2,"slug":"23-ai-powered-devai驱动的开发者","text":"23. AI-powered dev(AI驱动的开发者)"},{"depth":2,"slug":"24-lord-of-agents代理领主","text":"24. Lord of agents(代理领主)"},{"depth":2,"slug":"25-shiftshift-dukeshiftshift公爵","text":"25. Shift+Shift Duke(Shift+Shift公爵)"},{"depth":2,"slug":"26-optional-oracleoptional神谕者","text":"26. Optional oracle(Optional神谕者)"},{"depth":2,"slug":"27-conference-king会议之王","text":"27. Conference king(会议之王)"},{"depth":2,"slug":"28-the-javazillajava巨兽","text":"28. The JavaZilla(Java巨兽)"},{"depth":2,"slug":"29-stack-trace-therapist堆栈跟踪治疗师","text":"29. Stack trace therapist(堆栈跟踪治疗师)"},{"depth":2,"slug":"30-prompt-perfectionist提示词完美主义者","text":"30. Prompt perfectionist(提示词完美主义者)"}];
+
+  // 表格目录滚动跟踪功能 - 优化版实现
+  function initTableOfContents() {
+    const observerOptions = {
+      rootMargin: "-15% 0% -25% 0%",
+      threshold: [0, 0.1, 0.3, 0.5, 0.7, 0.9, 1.0],
+    };
+
+    const tocContainer = document.getElementById("table-of-contents");
+    let currentActiveId = null;
+    let isScrolling = false;
+    let headingElements = [];
+    let scrollDirection = "down";
+    let lastScrollY = window.scrollY;
+    let headingPositions = new Map();
+
+    // 计算标题优先级 - 多维度权重算法
+    function calculateHeadingPriority(element, id) {
+      const rect = element.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const elementHeight = rect.height;
+
+      // 可见度计算
+      const visibleTop = Math.max(0, rect.top);
+      const visibleBottom = Math.min(viewportHeight, rect.bottom);
+      const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+      const visibleRatio = Math.min(1, visibleHeight / elementHeight);
+
+      // 距离顶部位置权重
+      const distanceFromTop = Math.max(0, rect.top);
+      const idealOffset = 120; // 理想偏移量（考虑固定头部）
+      const maxDistance = viewportHeight * 0.5;
+
+      const distanceDiff = Math.abs(distanceFromTop - idealOffset);
+      const topDistanceWeight = Math.max(
+        0,
+        1 - Math.min(1, distanceDiff / maxDistance)
+      );
+
+      // 滚动方向权重
+      const directionWeight =
+        scrollDirection === "down"
+          ? rect.top < idealOffset
+            ? 1.2
+            : 0.8
+          : rect.top > idealOffset
+            ? 1.2
+            : 0.8;
+
+      const sizeWeight = Math.min(1, elementHeight / 100);
+      const historyWeight = id === currentActiveId ? 1.1 : 1.0;
+      const depth = id.split("-").length - 1;
+      const depthWeight = Math.max(0.5, 1 - depth * 0.1);
+
+      // 综合权重计算
+      const priority =
+        visibleRatio * 0.4 +
+        topDistanceWeight * 0.3 +
+        sizeWeight * 0.15 +
+        directionWeight * 0.1 +
+        historyWeight * 0.03 +
+        depthWeight * 0.02;
+
+      return {
+        priority,
+        visibleRatio,
+        topDistanceWeight,
+        distanceFromTop,
+        isFullyVisible: visibleRatio >= 0.95,
+        isAboveViewport: rect.bottom < 0,
+        isBelowViewport: rect.top > viewportHeight,
+      };
+    }
+
+    // 获取当前活跃标题
+    function getCurrentActiveHeading() {
+      if (headingElements.length === 0) return null;
+
+      const candidates = headingElements.map(({ element, id }) => ({
+        id,
+        element,
+        metrics: calculateHeadingPriority(element, id),
+      }));
+
+      const visibleCandidates = candidates.filter(
+        (c) => c.metrics.visibleRatio > 0
+      );
+
+      if (visibleCandidates.length === 0) {
+        // 无可见标题时选择最接近视口的
+        const nearestCandidates = candidates
+          .filter((c) => !c.metrics.isBelowViewport)
+          .sort((a, b) => {
+            if (a.metrics.isAboveViewport && !b.metrics.isAboveViewport)
+              return 1;
+            if (!a.metrics.isAboveViewport && b.metrics.isAboveViewport)
+              return -1;
+            if (a.metrics.isAboveViewport && b.metrics.isAboveViewport) {
+              return (
+                b.element.getBoundingClientRect().bottom -
+                a.element.getBoundingClientRect().bottom
+              );
+            }
+            return (
+              a.element.getBoundingClientRect().top -
+              b.element.getBoundingClientRect().top
+            );
+          });
+
+        return nearestCandidates.length > 0 ? nearestCandidates[0].id : null;
+      }
+
+      // 选择最佳可见标题
+      const bestCandidate = visibleCandidates.reduce((best, current) => {
+        if (current.metrics.priority > best.metrics.priority) {
+          return current;
+        }
+
+        // 避免频繁切换（抖动）
+        if (Math.abs(current.metrics.priority - best.metrics.priority) < 0.05) {
+          return current.id === currentActiveId ? current : best;
+        }
+
+        return best;
+      });
+
+      return bestCandidate.id;
+    }
+
+    // 防抖函数
+    function debounce(func, wait, immediate = false) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          timeout = null;
+          if (!immediate) func.apply(this, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(this, args);
+      };
+    }
+
+    // 交叉观察器 - 监听标题可见性变化
+    const observer = new IntersectionObserver((entries) => {
+      if (isScrolling) return;
+
+      const intersectionData = new Map();
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        intersectionData.set(id, {
+          isIntersecting: entry.isIntersecting,
+          intersectionRatio: entry.intersectionRatio,
+          boundingClientRect: entry.boundingClientRect,
+        });
+      });
+
+      const activeId = getCurrentActiveHeading();
+      if (activeId && activeId !== currentActiveId) {
+        updateActiveHeading(activeId);
+      }
+    }, observerOptions);
+
+    // 更新活跃标题状态
+    function updateActiveHeading(activeId) {
+      if (!activeId) return;
+
+      const allLinks = tocContainer?.querySelectorAll("a[data-heading-id]");
+      allLinks?.forEach((link) => {
+        link.classList.remove("bg-accent", "text-accent-foreground");
+      });
+
+      const activeLink = tocContainer?.querySelector(
+        `a[data-heading-id="${activeId}"]`
+      );
+      if (activeLink) {
+        activeLink.classList.add("bg-accent", "text-accent-foreground");
+
+        // 确保活跃项在目录容器中可见
+        if (!isElementInViewport(activeLink)) {
+          const containerRect = tocContainer?.getBoundingClientRect();
+          const linkRect = activeLink.getBoundingClientRect();
+
+          if (containerRect && linkRect) {
+            const scrollTop = tocContainer.scrollTop;
+            const containerHeight = containerRect.height;
+            const linkTop = linkRect.top - containerRect.top + scrollTop;
+            const linkHeight = linkRect.height;
+
+            // 计算滚动位置使链接居中显示
+            const targetScroll = linkTop - containerHeight / 2 + linkHeight / 2;
+
+            tocContainer.scrollTo({
+              top: Math.max(
+                0,
+                Math.min(
+                  targetScroll,
+                  tocContainer.scrollHeight - containerHeight
+                )
+              ),
+              behavior: "smooth",
+            });
+          }
+        }
+      }
+
+      currentActiveId = activeId;
+    }
+
+    // 检查元素是否在容器视口内
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      const containerRect = tocContainer?.getBoundingClientRect();
+      if (!containerRect) return true;
+
+      const tolerance = 20; // 容差值（像素）
+      return (
+        rect.top <= containerRect.bottom - tolerance &&
+        rect.bottom >= containerRect.top + tolerance
+      );
+    }
+
+    // 滚动事件处理
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
+      lastScrollY = currentScrollY;
+
+      if (isScrolling) return;
+
+      const activeId = getCurrentActiveHeading();
+      if (activeId && activeId !== currentActiveId) {
+        updateActiveHeading(activeId);
+      }
+
+      updateReadingProgress();
+    }
+
+    // 更新阅读进度
+    function updateReadingProgress() {
+      const contentContainer = document.getElementById("content-container");
+      const progressElement = document.getElementById("reading-progress");
+
+      if (!contentContainer || !progressElement) return;
+
+      const scrollTop = contentContainer.scrollTop;
+      const scrollHeight = contentContainer.scrollHeight;
+      const clientHeight = contentContainer.clientHeight;
+
+      const scrollPercentage = Math.min(
+        Math.max((scrollTop / (scrollHeight - clientHeight)) * 100, 0),
+        100
+      );
+
+      progressElement.textContent = `${Math.round(scrollPercentage)}%`;
+    }
+
+    // 滚动到顶部
+    function scrollToTop() {
+      const contentContainer = document.getElementById("content-container");
+      if (!contentContainer) return;
+
+      isScrolling = true;
+
+      contentContainer.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+      setTimeout(() => {
+        isScrolling = false;
+        updateReadingProgress();
+      }, 500);
+    }
+
+    // 滚动到指定标题
+    function scrollToHeading(event) {
+      event.preventDefault();
+      const targetId = event.target.getAttribute("data-heading-id");
+      if (!targetId) return;
+
+      const targetElement = document.getElementById(targetId);
+      if (!targetElement) return;
+
+      isScrolling = true;
+
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+
+      updateActiveHeading(targetId);
+      updateReadingProgress();
+
+      setTimeout(() => {
+        isScrolling = false;
+        updateReadingProgress();
+      }, 1000);
+    }
+
+    // 初始化功能
+    function init() {
+      if (!headings || headings.length === 0 || !tocContainer) return;
+
+      // 收集所有标题元素
+      headingElements = headings
+        .map((heading) => {
+          const element = document.getElementById(heading.slug);
+          return element ? { element, id: heading.slug } : null;
+        })
+        .filter(Boolean);
+
+      if (headingElements.length === 0) return;
+
+      // 观察所有标题元素
+      headingElements.forEach(({ element }) => {
+        observer.observe(element);
+      });
+
+      // 添加目录链接点击事件
+      const tocLinks = tocContainer.querySelectorAll("a[data-heading-id]");
+      tocLinks.forEach((link) => {
+        link.addEventListener("click", scrollToHeading);
+      });
+
+      // 添加阅读进度点击事件
+      const progressElement = document.getElementById("reading-progress");
+      if (progressElement) {
+        progressElement.addEventListener("click", scrollToTop);
+        progressElement.style.cursor = "pointer";
+      }
+
+      // 设置初始活跃标题
+      const initialActiveId = getCurrentActiveHeading();
+      if (initialActiveId) {
+        updateActiveHeading(initialActiveId);
+      }
+
+      const debouncedScroll = debounce(handleScroll, 100);
+
+      // 监听滚动事件
+      const contentContainer = document.getElementById("content-container");
+      if (contentContainer) {
+        contentContainer.addEventListener("scroll", debouncedScroll, {
+          passive: true,
+        });
+      } else {
+        // 降级方案：监听window滚动
+        window.addEventListener("scroll", debouncedScroll, { passive: true });
+      }
+
+      // 返回清理函数
+      return () => {
+        observer.disconnect();
+        tocLinks.forEach((link) => {
+          link.removeEventListener("click", scrollToHeading);
+        });
+        if (progressElement) {
+          progressElement.removeEventListener("click", scrollToTop);
+        }
+      };
+    }
+
+    // 页面加载完成后初始化
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+
+    // 响应窗口大小变化
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        headingPositions.clear();
+        const activeId = getCurrentActiveHeading();
+        if (activeId) {
+          updateActiveHeading(activeId);
+        }
+      }, 250)
+    );
+  }
+
+  // 启动目录功能
+  initTableOfContents();
+})();</script>  </div> <!-- 底部区域 --> <div class="mt-auto"> <div class="shrink-0 bg-border transition-colors duration-300 h-px w-full" aria-hidden="true"></div> <footer class="flex flex-col gap-1 text-sm text-muted-foreground tracking-wide container mx-auto py-2 footer layout" role="contentinfo"> <!-- 顶部区域：版权信息和运行时间 --> <div class="leading-6 flex justify-between flex-col items-center md:items-stretch md:flex-row"> <!-- 版权信息 --> <div class="flex gap-x-2"> <p>
+© 2025 <a href="https://yumih1129.github.io/coding-one-more-time" class="hover:text-primary hover:font-medium"> 叩钉壹刻 </a>. All rights reserved.
+</p> <span>Vela &amp; Astro</span>  </div> <!-- 日历和社交信息（当beian为空时显示在一起） --> <div class="flex items-center gap-4">  <div class="flex items-center gap-2"> <a href="https://github.com/yumih1129" target="_blank" rel="noopener noreferrer" title="GitHub" class="py-0.5 px-2 rounded-md hover:bg-accent transition-colors duration-200"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"> <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path>  </svg> </a><a href="mailto:yumih1129@163.com" target="_blank" rel="noopener noreferrer" title="邮箱" class="py-0.5 px-2 rounded-md hover:bg-accent transition-colors duration-200"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"> <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect>  </svg> </a><a href="https://yumih1129.github.io/coding-one-more-time/coding-one-more-time/rss.xml" target="_blank" rel="noopener noreferrer" title="RSS" class="py-0.5 px-2 rounded-md hover:bg-accent transition-colors duration-200"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss"> <path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>  </svg> </a> <!-- 许可证信息 --> <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/" class="hover:text-primary hover:font-medium"> CC BY-SA 4.0 </a> </div>  <div class="flex items-center gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-clock"> <path d="M16 14v2.2l1.6 1"></path><path d="M16 2v4"></path><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path><path d="M3 10h5"></path><path d="M8 2v4"></path><circle cx="16" cy="16" r="6"></circle>  </svg> <p class="text-end">
+自2025年08月起运行
+</p> </div> </div> </div> <!-- 底部区域：备案信息和社交链接（当beian不为空时显示） -->  </footer> </div> </main> </main> <!-- 右侧菜单抽屉 --> <!-- 右侧菜单抽屉 --><div id="rightMenuDrawer" class="fixed inset-0 z-50 pointer-events-none transition-colors duration-200 opacity-0" aria-label="导航菜单"> <div id="rightMenuDrawerOverlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-200 opacity-0"></div> <div id="rightMenuDrawerContent" class="absolute bg-background shadow-lg transform transition-transform duration-300 ease-in-out top-0 h-full w-64 sm:w-80 border-l border-border dark:border-slate-800 right-0 translate-x-full"> <div class="px-4 py-3 border-b border-border flex justify-between items-center"> <h4 class="text-base font-medium">菜单</h4> <button id="closeRightMenuDrawer" class="inline-flex items-center justify-center gap-x-1 rounded-md text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9 h-8 w-8 rounded-full">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"> <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>  </svg>  </button> </div> <div class="p-4 py-3 overflow-y-auto h-full">  <nav aria-label="Menu"><div class="space-y-1"><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/" title="首页" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>  </svg><span class="truncate font-medium" title="首页">首页</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/posts" title="文章" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notepad-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M8 2v4"></path><path d="M12 2v4"></path><path d="M16 2v4"></path><rect width="16" height="18" x="4" y="4" rx="2"></rect><path d="M8 10h6"></path><path d="M8 14h8"></path><path d="M8 18h5"></path>  </svg><span class="truncate font-medium" title="文章">文章</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/docs" title="小册" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><path d="M8 11h8"></path><path d="M8 7h6"></path>  </svg><span class="truncate font-medium" title="小册">小册</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/notes" title="随笔" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 bg-gray-100 dark:bg-secondary text-gray-900 dark:text-gray-100" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-text flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M2 6h4"></path><path d="M2 10h4"></path><path d="M2 14h4"></path><path d="M2 18h4"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M9.5 8h5"></path><path d="M9.5 12H16"></path><path d="M9.5 16H14"></path>  </svg><span class="truncate font-medium" title="随笔">随笔</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/gallery" title="图集" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-image flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="10" cy="8" r="2"></circle>  </svg><span class="truncate font-medium" title="图集">图集</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/links" title="友链" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flex-shrink-0 text-gray-500 dark:text-gray-400"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>  </svg><span class="truncate font-medium" title="友链">友链</span></a></div></div><div data-menu-item><div class="flex items-center"><a href="/coding-one-more-time/about" title="关于" class="flex items-center gap-x-1.5 px-3 py-2 rounded-md text-sm font-medium flex-1 min-w-0 transition-colors duration-200 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-secondary" onclick="window.rightMenuDrawerController.close()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info flex-shrink-0 text-gray-500 dark:text-gray-400"> <circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path>  </svg><span class="truncate font-medium" title="关于">关于</span></a></div></div></div></nav><script>
+  // 垂直菜单子菜单切换函数
+  function toggleVerticalSubmenu(event, button) {
+    // 阻止事件冒泡
+    if (event?.stopPropagation) event.stopPropagation();
+    if (!button) return;
+
+    // 找到子菜单元素和图标
+    const menuItem = button.closest("[data-menu-item]");
+    const submenu = menuItem?.querySelector("[data-submenu]");
+    if (!menuItem || !submenu) return;
+
+    // 确定图标位置并检查当前状态
+    const isButtonFullWidth = button.classList.contains("flex-1");
+    const icon = isButtonFullWidth
+      ? button.querySelector("svg:last-child")
+      : button.querySelector("svg");
+    const isOpen = submenu.classList.contains("max-h-0");
+
+    // 执行展开或收起动画
+    if (isOpen) {
+      // 展开动画
+      submenu.setAttribute("data-open", "true");
+
+      // 延迟设置max-h和opacity以确保动画正确触发
+      setTimeout(() => {
+        submenu.classList.add("mt-1");
+
+        // 延迟添加mt-1类使间距变化更自然
+        setTimeout(() => {
+          submenu.classList.remove("max-h-0", "opacity-0");
+          submenu.classList.add("max-h-96", "opacity-100");
+        }, 50);
+      }, 10);
+
+      // 旋转图标
+      if (icon) icon.style.transform = "rotate(180deg)";
+    } else {
+      // 收起动画 - 先移除mt-1类
+      submenu.classList.remove("mt-1");
+
+      // 延迟执行其他收起动画，使间距变化更自然
+      setTimeout(() => {
+        submenu.classList.remove("max-h-96", "opacity-100");
+        submenu.classList.add("max-h-0", "opacity-0");
+
+        // 延迟设置data-open属性
+        setTimeout(() => submenu.setAttribute("data-open", "false"), 150);
+      }, 50);
+
+      // 恢复图标位置
+      if (icon) icon.style.transform = "rotate(0deg)";
+    }
+  }
+
+  // 添加到window对象使全局可访问
+  window.toggleVerticalSubmenu = toggleVerticalSubmenu;
+</script>  </div> </div> </div> <script>(function(){const drawerId = "rightMenuDrawer";
+const position = "right";
+const open = false;
+const onOpenChange = undefined;
+
+  // 抽屉控制函数
+  const drawer = document.getElementById(drawerId);
+  const overlay = document.getElementById(`${drawerId}Overlay`);
+  const content = document.getElementById(`${drawerId}Content`);
+  const closeBtn = document.getElementById(
+    `close${drawerId.charAt(0).toUpperCase() + drawerId.slice(1)}`
+  );
+
+  const drawerController = {
+    open() {
+      if (drawer && overlay && content) {
+        drawer.classList.remove("pointer-events-none", "opacity-0");
+        overlay.classList.remove("opacity-0");
+        content.classList.remove(
+          "translate-x-full",
+          "-translate-x-full",
+          "translate-y-full",
+          "-translate-y-full"
+        );
+        document.body.style.overflow = "hidden";
+
+        // 触发 onOpenChange 回调
+        if (typeof onOpenChange === "function") {
+          onOpenChange(true);
+        }
+      }
+    },
+
+    close() {
+      if (drawer && overlay && content) {
+        overlay.classList.add("opacity-0");
+
+        // 根据位置类型应用正确的移出方向类
+        if (position === "right") {
+          content.classList.add("translate-x-full");
+        } else if (position === "left") {
+          content.classList.add("-translate-x-full");
+        } else if (position === "top") {
+          content.classList.add("-translate-y-full");
+        } else if (position === "bottom") {
+          content.classList.add("translate-y-full");
+        }
+
+        setTimeout(() => {
+          drawer.classList.add("pointer-events-none", "opacity-0");
+          document.body.style.overflow = "";
+
+          // 触发 onOpenChange 回调
+          if (typeof onOpenChange === "function") {
+            onOpenChange(false);
+          }
+        }, 300);
+      }
+    },
+
+    toggle() {
+      if (content) {
+        const isClosed =
+          content.classList.contains("translate-x-full") ||
+          content.classList.contains("-translate-x-full") ||
+          content.classList.contains("translate-y-full") ||
+          content.classList.contains("-translate-y-full");
+
+        if (isClosed) {
+          this.open();
+        } else {
+          this.close();
+        }
+      }
+    },
+  };
+
+  // 将控制器挂载到全局对象，方便外部调用
+  // 使用下划线替代连字符，确保是有效的JavaScript变量名
+  const controllerName = `${drawerId}`.replace(/-/g, "_") + "Controller";
+  window[controllerName] = drawerController;
+
+  // 同时保留原始的控制器名，以便向后兼容
+  window[`${drawerId}Controller`] = drawerController;
+
+  // 初始化事件监听
+  document.addEventListener("DOMContentLoaded", () => {
+    // 初始化显示状态
+    if (open) {
+      drawerController.open();
+    } else {
+      drawerController.close();
+    }
+
+    // 绑定关闭按钮事件
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        drawerController.close();
+      });
+    }
+
+    // 绑定遮罩层点击事件
+    if (overlay) {
+      overlay.addEventListener("click", () => {
+        drawerController.close();
+      });
+    }
+
+    // ESC关闭
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        const isOpen =
+          content &&
+          !(
+            content.classList.contains("translate-x-full") ||
+            content.classList.contains("-translate-x-full") ||
+            content.classList.contains("translate-y-full") ||
+            content.classList.contains("-translate-y-full")
+          );
+
+        if (isOpen) {
+          drawerController.close();
+        }
+      }
+    });
+  });
+})();</script> <script>(function(){const drawerId = "rightMenuDrawer";
+
+  // 提供关闭抽屉的便捷函数
+  window.closeRightMenuDrawer = function () {
+    if (
+      window.rightMenuDrawerController &&
+      typeof window.rightMenuDrawerController.close === "function"
+    ) {
+      window.rightMenuDrawerController.close();
+    }
+  };
+
+  // 定义关闭回调函数
+  window.onCloseRightMenuDrawer = function () {
+    // 可以在这里添加额外的关闭逻辑
+    console.log("右侧菜单抽屉已关闭");
+  };
+
+  // 初始化抽屉控制器引用
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!window.rightMenuDrawerController) {
+      console.warn("右侧菜单抽屉控制器未初始化");
+    }
+  });
+})();</script> </body></html>
